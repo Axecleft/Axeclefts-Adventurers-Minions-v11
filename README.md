@@ -1,2 +1,62 @@
-# Axeclefts-Adventurers-Minions-v11
-v11 version of the A&amp;M module.
+# Axecleft's Adventurers and Minions
+Complete D35E (D&D 3.5) characters and NPCs for Foundry VTT, part of Axecleft's Tool Suite (this copy: Foundry v11, D35E 2.4.3; the Foundry v13–v14 copy is Axecleft's Adventurers and Minions). Version 1.11.2.1 is a new module from the ground up and replaces the first Adventurers and Minions (1.14.1.0 and earlier: the Ability and Class Assigners), whose jobs Build and Edit now do.
+
+Open it from the **Axecleft's Tools** menu (**Adventurers and Minions**), **Build a character** at the top of the Actors directory, or the A&M button in the token controls (which edits the selected token's actor). The start page lists the characters you made or edited lately.
+
+## Build a character
+Work through the steps in any order; the summary on the right and the dots on the steps show what's left.
+1. **Basics.** Name, PC or NPC, race, sex, alignment, deity, age, height, weight, languages (automatic ones from the race, plus bonus languages from Intelligence), portrait and token.
+2. **Abilities.** Point buy, the elite or nonelite array, rolled scores (4d6 drop the lowest, or 3d6) or scores typed in. **Place by class** puts the highest scores where the first class wants them. Racial changes are shown, and the increases at levels 4, 8, 12… are chosen here.
+3. **Classes and levels.** Add levels of any class (base, prestige, racial HD, minion), one row per character level: class, hit points rolled (maximum at 1st level, then average, maximum or rolled), BAB and saves, and what each level gains (feats, ability increase, and the class features D35E adds: Sneak Attack +2d6, Evasion…). Prestige class requirements (SRD and psionic SRD) are checked before the class's first level: a prestige class the character doesn't qualify for is marked ✘ in the class lists, with what's missing (it can still be chosen), and taking it anyway is a rule broken. A multiclass character sees its favored class and any multiclass XP penalty (SRD: −20% for each class more than one level below the highest) under the table. The actor then gets a Multiclass XP Penalty trait, and the XP it gains is reduced by that much (setting **Multiclass XP penalty**).
+4. **Skills.** Level by level: the points each level gives, class or cross-class cost, and maximum ranks. **Same as before**, **Fill** and **Clear** help; Craft, Perform and Profession take named sub-skills.
+5. **Feats.** One slot for each feat the character gets: every third level, the human bonus feat, and class bonus feats (fighter, wizard, monk, psionic classes) from the class's own list. A rogue's special abilities (levels 10, 13, 16 and 19) are chosen here too, or a feat instead. Prerequisites are checked at that level; feats with a choice (Weapon Focus, Skill Focus, Spell Focus…) ask for it.
+6. **Review.** The character at a glance and everything still to check, then **Create actor**.
+
+The actor is made with D35E's level-up progression on: its level records (class, HP and skill points per level) are on the sheet, and D35E works out BAB, saves, skills, AC, attacks and class features. Rules that are broken are shown, never enforced.
+
+## Random character
+Choose any of: PC or NPC, race, sex, alignment, a class (and a second class) with their levels, the total level, how ability scores are made and hit points. Anything left on Random is chosen: common races, a class (NPC classes often for NPCs), 1 to 5 levels, an alignment the class allows.
+
+Each class follows its profile (data/profiles.json, modelled on the DMG's sample NPCs): the order its scores go in and where its increases go, the skills it buys (raised together, up to their maximum), the feats it takes as their prerequisites allow (Weapon Focus with its favourite weapon, and so on), and its likely alignments. Classes without a profile get one worked out from the class.
+
+**Generate** opens the character on Review: **Roll again** any part (name, abilities, hit points, skills, feats, or everything), or open any step and change it, then **Create actor**. **Create N at once** makes several straight into a folder.
+
+## Spells and equipment
+- **Spells** (Build step, and Random): clerics, druids, paladins, rangers and adepts get their whole class list: every SRD spell of the levels they can cast, plus random non-SRD spells from your other compendiums (the **Non-SRD spells per caster level** setting, default 1: a 9th-level cleric gets up to 9 at each spell level; 0 for SRD only). Some are prepared to fill their slots. Wizards get a spellbook (every SRD 0-level spell, 3 + Int modifier 1st-level spells, 2 new spells a level, and spells found adventuring: at each spell level 1, plus 1 for every 2 levels since they gained it, mostly SRD) prepared to fill their slots; sorcerers and bards their table's spells known, mostly SRD. Each class takes its profile's favourite spells first. Add, remove or change how many times a spell is prepared on the step. With Curios' spellbook rule on, the classes it lists (Wizard by default) get their spells in spellbook items (100 pages each), and prepare from them.
+- **Equipment** (Build step, and Random): **Standard gear** is the DMG's NPC gear for the main class at the character's level, with the weapon the character has Weapon Focus in. Axecleft's Armory makes the masterwork and magic arms and armor when it's active. Small characters get Small arms and armor (same price, half the weight; D35E scales a Small weapon's damage).
+- **Add** any weapon, armor, shield, ammunition or item by name, with a quantity, masterwork or a bonus, and (with Axecleft's Armory) a special material and special abilities, which the Armory checks and prices.
+- **Edit an actor's gear:** each item the actor has can be kept, unequipped (into the pack, freeing its place for new gear) or sold for its trade-in value (setting **Trade-in value**, SRD half), which adds to the wealth the new levels bring. Only a GM sells, unless **Players can trade in gear** is on.
+- **Load and worn slots:** Equipment shows the gear's weight against the character's carrying capacity (Strength and size) and warns about a medium or heavy load, gear too heavy to carry, and two items for one worn slot.
+- **Adventuring kit** (PCs by default; tick it for NPCs): the class kits of Pathfinder's *Ultimate Equipment* (Open Game Content), made of D35E's own items: backpack, bedroll, belt pouch, rations, torches, waterskin and the like, with the class's own tools (holy symbol, spell component pouch, holly and mistletoe, thieves' tools, musical instrument). A wizard's spellbook comes free. A multiclass character gets the kit of its main class plus the tools of its other classes.
+- **Wealth:** NPCs have the DMG's NPC gear value, PCs the character wealth by level; a 1st-level PC has its class's SRD starting gold instead (the average, or roll it on Equipment). What the gear doesn't use is rolled as treasure on the SRD Treasure table at the character's level (Treasure Generator, with Armory, Curios or Gemstones): gems, art and magic items, no coins, each kept while it fits. Treasure armor, shields and weapons are kept only when the character can use them (class, race and feat proficiencies; druids no metal; no shield with a two-handed weapon) and when they beat what the character has: one armor, one shield, one melee and one ranged weapon, by effective bonus (enhancement plus special abilities), then special abilities, then price; the Weapon Focus weapon counts +1. The item replaced goes back into the wealth. Nothing whose alignment clashes with the character's: intelligent items (SRD alignment rules) and holy, unholy, axiomatic and anarchic arms. Psionic items only for characters with a psionic class. What's left is platinum.
+
+## Edit an actor
+**Edit an actor** on the start page (choose an actor or a selected token, or drop one on the window), **Edit with Adventurers and Minions** in an actor's right-click menu in the Actors directory, or the **A&M** button in its sheet's title bar.
+
+- The actor is read into the steps. Actors A&M made reopen exactly as built. Others are read from their race, class items, D35E's level records (or the class items' levels when the actor doesn't use level-up progression: the order of the classes, the hit points of each level and where skill ranks were bought are then A&M's best guess), feats (placed in their slots) and spells. What was guessed is listed at the top of Classes and levels and Review; anything A&M doesn't know stays on the actor untouched.
+- Change anything: add levels of any class, change a level's class, remove levels, change ability scores, skills, feats or spells.
+- **Fill in what's missing** (Review) fills the skills of levels with points left, empty feat slots and feats whose prerequisites aren't met any more, ability increases and the spells new levels bring, by the class profiles. What you chose stays.
+- **Changes** (Review) lists everything that will change; **Apply changes** writes only that. Gear, effects and class features stay; gear added on Equipment is added, and treasure can be rolled for the wealth the new levels bring.
+- A copy of the actor is made first, in the folder **A&M backups** (setting **Copy before an edit**).
+
+## Variant classes
+The variant classes of Unearthed Arcana (SRD variant rules) are in their own group of the class lists: totem barbarians, bardic sage, divine and savage bards, cloistered cleric, druidic avenger, thug, monk fighting styles, paladins of freedom, slaughter and tyranny, planar and urban rangers, wilderness rogue and battle sorcerer. A&M builds each from its standard class with the variant's changes; what D35E can't do itself shows as notes on the sheet. Classes and levels also offers the class feature variants (whirling frenzy, favored environment, turning by level check or planar banishment, aspect of nature, a ranger's combat style, and the specialist wizard variants of the wizard's school) for each class that has them. A wizard can also be a domain wizard, with one of the 13 arcane domains in place of a specialist school (Spells). Setting **Variant classes** turns them off.
+
+## Spontaneous casting
+World setting **Spontaneous casting** makes every caster spontaneous: clerics and druids by Unearthed Arcana's spontaneous divine casters (domain spells or summon nature's ally known, +1 spell a day of each level), paladins and rangers knowing two more spells than they cast a day, and wizards casting any spell in their spellbook. With the setting off, these are the variant classes Cleric, Druid, Paladin, Ranger and Wizard (Spontaneous).
+
+## Builds (GM: Build profiles)
+Random characters and A&M's own choices follow a build for each class: its ability order, skills, feats, alignments, spells and gear. Several classes have more than one (an archer, two-handed or two-weapon fighter; a healer cleric; a controller or summoner wizard…): Random picks one, or the one chosen, and Classes and levels lets you choose a character's. **Build profiles** on the start page lets a GM change them, add their own, or hide one; they're kept in the world, with Export and Import.
+
+## Prestige requirements (GM)
+**Prestige requirements** on the start page: the requirements A&M checks for each prestige class found. The SRD's come with A&M (15 core and 9 psionic classes); a GM can change them for this world, give a custom or homebrew prestige class its own (race, alignment, BAB, skills, feats, spellcasting, psionics, sneak attack, martial weapons, languages, and a special requirement shown as a reminder), or set **No requirements**. **Use the SRD's** goes back; **Export** and **Import** move them between worlds.
+
+## Settings
+Ability scores (how new characters start), point-buy points, hit points per level, non-SRD spells per caster level, copy before an edit, trade-in value, players can trade in gear, multiclass XP penalty, variant classes, spontaneous casting.
+
+## Legal
+Game rules from the System Reference Document 3.5 and Pathfinder's Ultimate Equipment are Open Game Content under the Open Game License v1.0a.
+
+OGL Section 15 (Copyright Notice), in part:
+- System Reference Document Copyright 2000–2003, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff, Thomas Reid, James Wyatt, based on original material by E. Gary Gygax and Dave Arneson.
+- Pathfinder Roleplaying Game Ultimate Equipment. © 2012, Paizo Publishing, LLC; Authors: Dennis Baker, Jesse Benner, Benjamin Bruck, Ross Byers, Brian J. Cortijo, Ryan Costello, Mike Ferguson, Matt Goetz, Jim Groves, Tracy Hurley, Matt James, Jonathan H. Keith, Michael Kenway, Hal MacLean, Jason Nelson, Tork Shaw, Owen K. C. Stephens, Russ Taylor, and numerous RPG Superstar contributors.

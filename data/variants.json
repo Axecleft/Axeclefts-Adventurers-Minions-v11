@@ -1,0 +1,2897 @@
+{
+ "_note": "Variant classes of Unearthed Arcana (in the SRD's variant rules), by the class they change (English name), then the variant's name. Each changes the standard class only where it says: hd, bab (low | med | high), saves { fort, ref, will }, skillsPerLevel, skillsAdd / skillsRemove (D35E skill keys), alignments (the only ones allowed), lose (the class features it doesn't get, by name; 'Name@1' only at that level), gain ([class level, text]: features shown on the sheet as notes), addAbilities ([level, D35E class ability name]), bonusFeats ({ levels, from, ignorePrereqs }: added, or the class's own replaced with replaceBonusFeats), dropBonusFeatLevels (class bonus feats it doesn't get), specialsAdd (more special abilities to choose from), casting { type } (divine for arcane), spellsPerDay / spellsKnown (added to each spell level of the class tables), spells { add: { level: [names] }, remove: [names], replace: { level: [names] } } and changes ([class level, formula, target, subtarget]: D35E changes on the class item from that class level, as +2 on a skill). spontaneous { known: table (spontaneousKnown below, Unearthed Arcana's spontaneous divine casters) | slotsPlus2 (spells a day + 2 known at each level) | book (any spell in its spellbook), perDay (added to each spell level it casts), auto: domains (a cleric knows its domain spells) | summon (a druid knows summon nature's ally) }: a spontaneous caster. The world setting Spontaneous casting makes the standard classes so (the Spontaneous variants are then left out). features: class feature variants a character can take with its class ({ Class: { name: { lose, gain, exclusive } } }; exclusive: only one of the options sharing it), chosen on Classes and levels. A combat style (ranger: style true, one of its exclusive group always taken, default the class's build's combatStyle or the one marked default): grants ([class level, D35E class ability, feat]) puts that class ability on the actor named after the style, linking the feat (D35E's linked items add it), in place of D35E's own. Specialist wizard variants (Wizard, school: the specialist school they belong to): each replaces the familiar (Summon Familiar), the wizard bonus feats (dropBonusFeats) or the specialty spell (noSlot); skillsAdd: more class skills; feats: [class level, feat] given without a slot; bonusFeatsFrom: the wizard bonus feat list changed (removeMetamagic, add).",
+ "variants": {
+  "Barbarian": {
+   "Ape Totem": {
+    "lose": [
+     "Fast Movement",
+     "Uncanny Dodge",
+     "Trap Sense",
+     "Improved Uncanny Dodge"
+    ],
+    "gain": [
+     [
+      1,
+      "Climb speed (half base land speed)"
+     ],
+     [
+      2,
+      "+2 on Intimidate checks"
+     ],
+     [
+      5,
+      "Climb speed equal to base land speed"
+     ]
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       3
+      ],
+      "from": [
+       "Power Attack"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "changes": [
+     [
+      2,
+      "2",
+      "skill",
+      "skill.int"
+     ]
+    ]
+   },
+   "Bear Totem": {
+    "lose": [
+     "Fast Movement",
+     "Uncanny Dodge",
+     "Trap Sense",
+     "Improved Uncanny Dodge"
+    ],
+    "gain": [
+     [
+      5,
+      "+4 on grapple checks while raging"
+     ]
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Toughness"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Improved Grapple"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       3
+      ],
+      "from": [
+       "Great Fortitude"
+      ],
+      "ignorePrereqs": true
+     }
+    ]
+   },
+   "Boar Totem": {
+    "lose": [
+     "Fast Movement",
+     "Uncanny Dodge",
+     "Trap Sense",
+     "Improved Uncanny Dodge"
+    ],
+    "gain": [
+     [
+      1,
+      "Diehard while raging"
+     ],
+     [
+      3,
+      "Rage lasts 2 rounds longer"
+     ],
+     [
+      7,
+      "Damage reduction 1 higher"
+     ]
+    ]
+   },
+   "Dragon Totem": {
+    "lose": [
+     "Fast Movement",
+     "Uncanny Dodge",
+     "Trap Sense",
+     "Improved Uncanny Dodge"
+    ],
+    "gain": [
+     [
+      2,
+      "+2 on saves against paralysis and sleep"
+     ],
+     [
+      5,
+      "Frightful presence (DC 10 + ½ barbarian level + Cha modifier)"
+     ]
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Blind-Fight"
+      ],
+      "ignorePrereqs": true
+     }
+    ]
+   },
+   "Eagle Totem": {
+    "lose": [
+     "Fast Movement",
+     "Trap Sense"
+    ],
+    "gain": [
+     [
+      1,
+      "+2 on Spot checks (keen vision)"
+     ]
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       3
+      ],
+      "from": [
+       "Lightning Reflexes"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.spt"
+     ]
+    ]
+   },
+   "Horse Totem": {
+    "lose": [
+     "Uncanny Dodge",
+     "Trap Sense",
+     "Improved Uncanny Dodge"
+    ],
+    "gain": [
+     [
+      3,
+      "+2 on Handle Animal and Ride checks with horses"
+     ]
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Run"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       5
+      ],
+      "from": [
+       "Endurance"
+      ],
+      "ignorePrereqs": true
+     }
+    ]
+   },
+   "Lion Totem": {
+    "lose": [
+     "Fast Movement",
+     "Uncanny Dodge",
+     "Improved Uncanny Dodge"
+    ],
+    "gain": [
+     [
+      2,
+      "+2 on Hide checks"
+     ],
+     [
+      5,
+      "+2 on damage rolls when charging"
+     ]
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Run"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "changes": [
+     [
+      2,
+      "2",
+      "skill",
+      "skill.hid"
+     ]
+    ]
+   },
+   "Serpent Totem": {
+    "lose": [
+     "Fast Movement",
+     "Uncanny Dodge",
+     "Trap Sense",
+     "Improved Uncanny Dodge"
+    ],
+    "gain": [
+     [
+      1,
+      "+2 on Fortitude saves against poison"
+     ],
+     [
+      2,
+      "+2 on Move Silently checks"
+     ]
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       3
+      ],
+      "from": [
+       "Improved Grapple"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       5
+      ],
+      "from": [
+       "Improved Initiative"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "changes": [
+     [
+      2,
+      "2",
+      "skill",
+      "skill.mos"
+     ]
+    ]
+   },
+   "Wolf Totem": {
+    "lose": [
+     "Uncanny Dodge",
+     "Trap Sense",
+     "Improved Uncanny Dodge"
+    ],
+    "bonusFeats": [
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Improved Trip"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       5
+      ],
+      "from": [
+       "Track"
+      ],
+      "ignorePrereqs": true
+     }
+    ]
+   }
+  },
+  "Bard": {
+   "Bardic Sage": {
+    "alignments": [
+     "ng",
+     "tn",
+     "ne"
+    ],
+    "saves": {
+     "fort": "low",
+     "ref": "low",
+     "will": "high"
+    },
+    "gain": [
+     [
+      1,
+      "Knows one extra divination spell of each level it can cast"
+     ],
+     [
+      1,
+      "Needs Intelligence 10 + spell level to learn or cast (bonus spells and DCs still from Charisma)"
+     ],
+     [
+      1,
+      "+2 on bardic knowledge checks"
+     ],
+     [
+      1,
+      "Inspire courage, greatness and heroics last 3 rounds after (not 5)"
+     ]
+    ],
+    "spells": {
+     "add": {
+      "1": [
+       "Detect Chaos",
+       "Detect Evil",
+       "Detect Good",
+       "Detect Law"
+      ],
+      "2": [
+       "Zone of Truth"
+      ],
+      "3": [
+       "Arcane Sight"
+      ],
+      "4": [
+       "Analyze Dweomer",
+       "Sending"
+      ],
+      "5": [
+       "Contact Other Plane",
+       "Greater Scrying"
+      ],
+      "6": [
+       "True Seeing",
+       "Vision"
+      ]
+     }
+    }
+   },
+   "Divine Bard": {
+    "casting": {
+     "type": "divine"
+    },
+    "gain": [
+     [
+      1,
+      "Divine spells; needs Wisdom 10 + spell level to learn or cast (bonus spells and DCs still from Charisma)"
+     ],
+     [
+      1,
+      "Can't cast spells of an alignment that isn't its own"
+     ]
+    ],
+    "spells": {
+     "add": {
+      "0": [
+       "Create Water",
+       "Cure Minor Wounds"
+      ],
+      "1": [
+       "Detect Evil",
+       "Detect Good",
+       "Detect Law",
+       "Protection from Evil",
+       "Protection from Good",
+       "Protection from Law"
+      ],
+      "2": [
+       "Consecrate",
+       "Desecrate",
+       "Gentle Repose"
+      ],
+      "3": [
+       "Magic Circle against Evil",
+       "Magic Circle against Good",
+       "Magic Circle against Law",
+       "Prayer"
+      ],
+      "4": [
+       "Remove Disease",
+       "Speak with Dead",
+       "Sending"
+      ],
+      "5": [
+       "Divination",
+       "Restoration"
+      ],
+      "6": [
+       "Commune",
+       "Hallow",
+       "Unhallow",
+       "Raise Dead"
+      ]
+     }
+    }
+   },
+   "Savage Bard": {
+    "alignments": [
+     "cg",
+     "cn",
+     "ce"
+    ],
+    "saves": {
+     "fort": "high",
+     "ref": "low",
+     "will": "high"
+    },
+    "skillsRemove": [
+     "dsc",
+     "spk"
+    ],
+    "skillsAdd": [
+     "sur"
+    ],
+    "gain": [
+     [
+      1,
+      "Illiteracy (can't use or scribe scrolls)"
+     ]
+    ],
+    "spells": {
+     "remove": [
+      "Calm Emotions",
+      "Comprehend Languages",
+      "Detect Secret Doors",
+      "Erase",
+      "Prestidigitation",
+      "Read Magic",
+      "Sepia Snake Sigil",
+      "Summon Monster I",
+      "Summon Monster II",
+      "Summon Monster III",
+      "Summon Monster IV",
+      "Summon Monster V",
+      "Summon Monster VI"
+     ],
+     "add": {
+      "1": [
+       "Calm Animals",
+       "Detect Snares and Pits",
+       "Endure Elements",
+       "Summon Nature's Ally I"
+      ],
+      "2": [
+       "Bull's Strength",
+       "Pass Without Trace",
+       "Summon Nature's Ally Ii"
+      ],
+      "3": [
+       "Snare",
+       "Summon Nature's Ally Iii"
+      ],
+      "4": [
+       "Insect Plague",
+       "Summon Nature's Ally Iv"
+      ],
+      "5": [
+       "Commune with Nature",
+       "Summon Nature's Ally V"
+      ],
+      "6": [
+       "Creeping Doom",
+       "Reincarnate",
+       "Summon Nature's Ally Vi"
+      ]
+     }
+    }
+   }
+  },
+  "Cleric": {
+   "Cloistered Cleric": {
+    "hd": 6,
+    "bab": "low",
+    "skillsPerLevel": 6,
+    "skillsAdd": [
+     "dsc",
+     "spk",
+     "kar",
+     "kdu",
+     "ken",
+     "kge",
+     "khi",
+     "klo",
+     "kna",
+     "kno",
+     "kpl",
+     "kre",
+     "kps"
+    ],
+    "lose": [
+     "Armor Proficiency (Heavy)",
+     "Armor Proficiency (Medium)",
+     "Shield Proficiency"
+    ],
+    "gain": [
+     [
+      1,
+      "Lore (as bardic knowledge, by cleric level)"
+     ],
+     [
+      1,
+      "Knowledge domain as a bonus domain (its granted power, and its spells for the domain slot)"
+     ],
+     [
+      1,
+      "Proficient with simple weapons and light armor only"
+     ]
+    ],
+    "spells": {
+     "add": {
+      "0": [
+       "Message"
+      ],
+      "1": [
+       "Erase",
+       "Identify",
+       "Unseen Servant"
+      ],
+      "2": [
+       "Fox's Cunning"
+      ],
+      "3": [
+       "Illusory Script",
+       "Secret Page",
+       "Tongues"
+      ],
+      "4": [
+       "Detect Scrying"
+      ],
+      "6": [
+       "Analyze Dweomer"
+      ],
+      "7": [
+       "Sequester"
+      ],
+      "9": [
+       "Vision"
+      ]
+     }
+    }
+   },
+   "Spontaneous": {
+    "spontaneous": {
+     "known": "table",
+     "perDay": 1,
+     "auto": "domains"
+    },
+    "gain": [
+     [
+      1,
+      "Spontaneous casting: spells known (Unearthed Arcana table) and its domain spells, one more spell a day of each level; no domain slot"
+     ],
+     [
+      1,
+      "Can't convert prepared spells into cure or inflict spells"
+     ],
+     [
+      4,
+      "Can learn a new spell in place of a known one at 4th level and every even level after (never a domain spell)"
+     ]
+    ]
+   }
+  },
+  "Druid": {
+   "Druidic Avenger": {
+    "skillsAdd": [
+     "int"
+    ],
+    "skillsRemove": [
+     "dip"
+    ],
+    "lose": [
+     "Animal Companion"
+    ],
+    "gain": [
+     [
+      1,
+      "Fast movement (+10 ft. land speed)"
+     ],
+     [
+      1,
+      "Rage 1/day as a barbarian (+1/day every five levels after 1st; no greater, mighty rage or indomitable will)"
+     ],
+     [
+      1,
+      "Can't spontaneously cast summon nature's ally"
+     ],
+     [
+      1,
+      "−4 on wild empathy checks"
+     ],
+     [
+      17,
+      "Tireless rage"
+     ]
+    ]
+   },
+   "Spontaneous": {
+    "spontaneous": {
+     "known": "table",
+     "perDay": 1,
+     "auto": "summon"
+    },
+    "gain": [
+     [
+      1,
+      "Spontaneous casting: spells known (Unearthed Arcana table) and summon nature's ally of each level, one more spell a day of each level"
+     ],
+     [
+      1,
+      "Can't convert prepared spells into summon nature's ally spells"
+     ],
+     [
+      4,
+      "Can learn a new spell in place of a known one at 4th level and every even level after (never a summon nature's ally spell)"
+     ]
+    ]
+   }
+  },
+  "Fighter": {
+   "Thug": {
+    "skillsAdd": [
+     "blf",
+     "gif",
+     "klo",
+     "slt"
+    ],
+    "skillsPerLevel": 4,
+    "lose": [
+     "Armor Proficiency (Heavy)",
+     "Armor Proficiency (Medium)",
+     "Shield Proficiency",
+     "Tower Shield Proficiency",
+     "Bonus Feat (Fighter)@1"
+    ],
+    "dropBonusFeatLevels": [
+     1
+    ],
+    "gain": [
+     [
+      1,
+      "Proficient with simple and martial weapons and light armor; no 1st-level bonus feat"
+     ]
+    ]
+   }
+  },
+  "Monk": {
+   "Cobra Strike": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Dodge"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Mobility"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Spring Attack"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Escape Artist checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: The dodge bonus from Dodge rises to +2 (needs Balance 4 ranks, Escape Artist 9 ranks)"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.esc"
+     ]
+    ]
+   },
+   "Denying Stance": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Improved Grapple"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Combat Reflexes"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Improved Disarm"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Tumble checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: +2 on grapple checks and disarm attempts when fighting defensively or using Combat Expertise (needs Tumble 9 ranks, Combat Expertise)"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.tmb"
+     ]
+    ]
+   },
+   "Hand and Foot": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Stunning Fist"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Deflect Arrows"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Improved Trip"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Balance checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: +2 on attacks of opportunity against bull rush or trip, +4 to avoid being tripped or bull rushed (needs Balance 9 ranks, Tumble 4 ranks)"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.blc"
+     ]
+    ]
+   },
+   "Invisible Eye": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Combat Reflexes"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Lightning Reflexes"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Blind-Fight"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Listen checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: +1 dodge bonus when unarmed and fighting defensively, using Combat Expertise or total defense (needs Listen 9 ranks, Agile)"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.lis"
+     ]
+    ]
+   },
+   "Overwhelming Attack": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Power Attack"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Improved Bull Rush"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Improved Overrun"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Intimidate checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: +4 on Strength checks to bull rush or overrun a demoralized foe (needs Intimidate 4 ranks, Perform (dance) 4 ranks)"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.int"
+     ]
+    ]
+   },
+   "Passive Way": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Combat Expertise"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Improved Trip"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Improved Feint"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Bluff checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: +4 on Strength checks to trip a foe denied its Dexterity bonus (needs Bluff 4 ranks, Sense Motive 4 ranks, Skill Focus (Bluff))"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.blf"
+     ]
+    ]
+   },
+   "Sleeping Tiger": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Weapon Finesse"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Improved Initiative"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Improved Sunder"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Hide checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: +1d6 damage once a round with a light weapon against a foe denied its Dexterity bonus (needs Hide 9 ranks, Power Attack)"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.hid"
+     ]
+    ]
+   },
+   "Undying Way": {
+    "bonusFeats": [
+     {
+      "levels": [
+       1
+      ],
+      "from": [
+       "Toughness"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       2
+      ],
+      "from": [
+       "Endurance"
+      ],
+      "ignorePrereqs": true
+     },
+     {
+      "levels": [
+       6
+      ],
+      "from": [
+       "Diehard"
+      ],
+      "ignorePrereqs": true
+     }
+    ],
+    "replaceBonusFeats": true,
+    "gain": [
+     [
+      1,
+      "+2 on Concentration checks (fighting style)"
+     ],
+     [
+      6,
+      "Fighting style ability: Damage reduction 2/— when fighting defensively, using Combat Expertise or total defense (needs Concentration 9 ranks)"
+     ]
+    ],
+    "changes": [
+     [
+      1,
+      "2",
+      "skill",
+      "skill.coc"
+     ]
+    ]
+   }
+  },
+  "Paladin": {
+   "Paladin of Freedom": {
+    "alignments": [
+     "cg"
+    ],
+    "skillsRemove": [
+     "dip"
+    ],
+    "skillsAdd": [
+     "blf"
+    ],
+    "lose": [
+     "Aura of Courage"
+    ],
+    "gain": [
+     [
+      3,
+      "Aura of resolve (immune to compulsion; allies within 10 ft. +4 morale bonus on saves against compulsion)"
+     ]
+    ],
+    "spells": {
+     "remove": [
+      "Death Ward",
+      "Discern Lies",
+      "Dispel Chaos",
+      "Magic Circle against Chaos",
+      "Protection from Chaos"
+     ],
+     "add": {
+      "1": [
+       "Protection from Law"
+      ],
+      "3": [
+       "Magic Circle against Law"
+      ],
+      "4": [
+       "Dispel Law",
+       "Freedom of Movement"
+      ]
+     }
+    }
+   },
+   "Paladin of Slaughter": {
+    "alignments": [
+     "ce"
+    ],
+    "skillsRemove": [
+     "dip"
+    ],
+    "skillsAdd": [
+     "int"
+    ],
+    "lose": [
+     "Detect Evil",
+     "Smite Evil",
+     "Lay on Hands",
+     "Aura of Courage",
+     "Remove Disease"
+    ],
+    "gain": [
+     [
+      1,
+      "Aura of evil"
+     ],
+     [
+      1,
+      "Detect good at will"
+     ],
+     [
+      1,
+      "Smite good 1/day (+1/day at 5th, 10th, 15th, 20th)"
+     ],
+     [
+      2,
+      "Deadly touch (paladin level × Cha bonus damage a day)"
+     ],
+     [
+      3,
+      "Debilitating aura (enemies within 10 ft. −1 AC)"
+     ],
+     [
+      4,
+      "Rebukes undead (not turn)"
+     ],
+     [
+      6,
+      "Cause disease 1/week (as contagion; more as remove disease)"
+     ]
+    ],
+    "spells": {
+     "replace": {
+      "1": [
+       "Bane",
+       "Cause Fear",
+       "Corrupt Weapon",
+       "Create Water",
+       "Curse Water",
+       "Detect Poison",
+       "Detect Undead",
+       "Divine Favor",
+       "Endure Elements",
+       "Inflict Light Wounds",
+       "Magic Weapon",
+       "Protection from Good",
+       "Protection from Law",
+       "Read Magic",
+       "Resistance",
+       "Virtue"
+      ],
+      "2": [
+       "Bull's Strength",
+       "Cure Light Wounds",
+       "Darkness",
+       "Delay Poison",
+       "Eagle's Splendor",
+       "Inflict Moderate Wounds",
+       "Owl's Wisdom",
+       "Resist Energy",
+       "Undetectable Alignment"
+      ],
+      "3": [
+       "Blindness/Deafness",
+       "Cure Moderate Wounds",
+       "Deeper Darkness",
+       "Dispel Magic",
+       "Greater Magic Weapon",
+       "Heal Mount",
+       "Prayer",
+       "Inflict Serious Wounds",
+       "Magic Circle against Good",
+       "Magic Circle against Law"
+      ],
+      "4": [
+       "Break Enchantment",
+       "Cure Serious Wounds",
+       "Dispel Good",
+       "Dispel Law",
+       "Inflict Critical Wounds",
+       "Poison",
+       "Unholy Sword"
+      ]
+     }
+    }
+   },
+   "Paladin of Tyranny": {
+    "alignments": [
+     "le"
+    ],
+    "lose": [
+     "Detect Evil",
+     "Smite Evil",
+     "Lay on Hands",
+     "Aura of Courage",
+     "Remove Disease"
+    ],
+    "gain": [
+     [
+      1,
+      "Aura of evil"
+     ],
+     [
+      1,
+      "Detect good at will"
+     ],
+     [
+      1,
+      "Smite good 1/day (+1/day at 5th, 10th, 15th, 20th)"
+     ],
+     [
+      2,
+      "Deadly touch (paladin level × Cha bonus damage a day)"
+     ],
+     [
+      3,
+      "Aura of despair (enemies within 10 ft. −2 on saves)"
+     ],
+     [
+      4,
+      "Rebukes undead (not turn)"
+     ],
+     [
+      6,
+      "Cause disease 1/week (as contagion; more as remove disease)"
+     ]
+    ],
+    "spells": {
+     "replace": {
+      "1": [
+       "Bane",
+       "Corrupt Weapon",
+       "Create Water",
+       "Curse Water",
+       "Detect Poison",
+       "Detect Undead",
+       "Divine Favor",
+       "Doom",
+       "Endure Elements",
+       "Inflict Light Wounds",
+       "Magic Weapon",
+       "Protection from Chaos",
+       "Protection from Good",
+       "Read Magic",
+       "Resistance",
+       "Virtue"
+      ],
+      "2": [
+       "Bull's Strength",
+       "Cure Light Wounds",
+       "Darkness",
+       "Delay Poison",
+       "Eagle's Splendor",
+       "Hold Person",
+       "Inflict Moderate Wounds",
+       "Owl's Wisdom",
+       "Resist Energy",
+       "Undetectable Alignment"
+      ],
+      "3": [
+       "Bestow Curse",
+       "Cure Moderate Wounds",
+       "Deeper Darkness",
+       "Discern Lies",
+       "Dispel Magic",
+       "Greater Magic Weapon",
+       "Heal Mount",
+       "Prayer",
+       "Inflict Serious Wounds",
+       "Magic Circle against Chaos",
+       "Magic Circle against Good"
+      ],
+      "4": [
+       "Break Enchantment",
+       "Cure Serious Wounds",
+       "Dispel Chaos",
+       "Dispel Good",
+       "Dominate Person",
+       "Inflict Critical Wounds",
+       "Unholy Sword"
+      ]
+     }
+    }
+   },
+   "Spontaneous": {
+    "spontaneous": {
+     "known": "slotsPlus2"
+    },
+    "gain": [
+     [
+      4,
+      "Spontaneous casting: knows two more spells of each level than it casts a day (A&M's rule for half casters)"
+     ]
+    ]
+   }
+  },
+  "Ranger": {
+   "Planar Ranger": {
+    "skillsRemove": [
+     "kna",
+     "kdu"
+    ],
+    "skillsAdd": [
+     "kpl",
+     "spk"
+    ],
+    "gain": [
+     [
+      1,
+      "Wild empathy: no penalty with celestial or fiendish magical beasts, −4 with animals"
+     ],
+     [
+      4,
+      "May have a celestial (nonevil) or fiendish (nongood) animal companion"
+     ],
+     [
+      4,
+      "Spells that affect animals also affect celestial and fiendish animals"
+     ]
+    ]
+   },
+   "Urban Ranger": {
+    "skillsRemove": [
+     "kna",
+     "kdu",
+     "sur"
+    ],
+    "skillsAdd": [
+     "gif",
+     "klo",
+     "sen"
+    ],
+    "lose": [
+     "Track",
+     "Woodland Stride",
+     "Camouflage"
+    ],
+    "gain": [
+     [
+      1,
+      "Urban Tracking instead of Track (Gather Information to track within a community)"
+     ],
+     [
+      1,
+      "Wild empathy with half the class level"
+     ],
+     [
+      1,
+      "Favored enemy may be an organization"
+     ],
+     [
+      4,
+      "Animal companion Medium or smaller"
+     ],
+     [
+      8,
+      "Swift tracker: Urban Tracking checks every half hour without penalty"
+     ],
+     [
+      17,
+      "Hide in plain sight in any area"
+     ]
+    ],
+    "spells": {
+     "remove": [
+      "Animal Messenger",
+      "Charm Animal",
+      "Detect Animals or Plants",
+      "Speak with Animals",
+      "Bear's Endurance",
+      "Hold Animal",
+      "Snare",
+      "Speak with Plants",
+      "Command Plants",
+      "Diminish Plants",
+      "Plant Growth",
+      "Reduce Animal",
+      "Tree Shape",
+      "Water Walk",
+      "Commune with Nature",
+      "Tree Stride"
+     ],
+     "add": {
+      "1": [
+       "Comprehend Languages",
+       "Detect Chaos",
+       "Detect Good",
+       "Detect Evil",
+       "Detect Law",
+       "Detect Secret Doors",
+       "Message"
+      ],
+      "2": [
+       "Detect Thoughts",
+       "Eagle's Splendor",
+       "Knock",
+       "Locate Object"
+      ],
+      "3": [
+       "Discern Lies",
+       "Invisibility",
+       "Speak with Dead",
+       "Tongues"
+      ],
+      "4": [
+       "Dimensional Anchor",
+       "Locate Creature",
+       "Mage's Faithful Hound",
+       "True Seeing"
+      ]
+     }
+    }
+   },
+   "Spontaneous": {
+    "spontaneous": {
+     "known": "slotsPlus2"
+    },
+    "gain": [
+     [
+      4,
+      "Spontaneous casting: knows two more spells of each level than it casts a day (A&M's rule for half casters)"
+     ]
+    ]
+   }
+  },
+  "Rogue": {
+   "Wilderness Rogue": {
+    "skillsRemove": [
+     "apr",
+     "dip",
+     "dsc",
+     "fog",
+     "gif"
+    ],
+    "skillsAdd": [
+     "han",
+     "kge",
+     "kna",
+     "rid",
+     "sur"
+    ],
+    "specialsAdd": [
+     "Woodland Stride",
+     "Camouflage",
+     "Hide in Plain Sight"
+    ],
+    "gain": [
+     [
+      10,
+      "Special abilities may also be woodland stride, camouflage or hide in plain sight (after camouflage)"
+     ]
+    ]
+   }
+  },
+  "Sorcerer": {
+   "Battle Sorcerer": {
+    "hd": 8,
+    "bab": "med",
+    "skillsRemove": [
+     "blf"
+    ],
+    "skillsAdd": [
+     "int"
+    ],
+    "spellsPerDay": -1,
+    "spellsKnown": -1,
+    "addAbilities": [
+     [
+      1,
+      "Armor Proficiency (Light)"
+     ]
+    ],
+    "gain": [
+     [
+      1,
+      "Proficient with one light or one-handed martial weapon of choice, and light armor"
+     ],
+     [
+      1,
+      "No arcane spell failure in light armor (battle sorcerer spells)"
+     ],
+     [
+      1,
+      "One fewer spell a day and one fewer spell known of each level"
+     ]
+    ]
+   }
+  },
+  "Wizard": {
+   "Spontaneous": {
+    "spontaneous": {
+     "known": "book"
+    },
+    "gain": [
+     [
+      1,
+      "Spontaneous casting: casts any spell of its spellbook with its spell slots, without preparing"
+     ]
+    ]
+   }
+  }
+ },
+ "spontaneousKnown": [
+  [
+   1,
+   4,
+   2,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   2,
+   5,
+   2,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   3,
+   5,
+   3,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   4,
+   6,
+   3,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   5,
+   6,
+   4,
+   2,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   6,
+   7,
+   4,
+   2,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   7,
+   7,
+   5,
+   3,
+   2,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   8,
+   8,
+   5,
+   3,
+   2,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   9,
+   8,
+   5,
+   4,
+   3,
+   2,
+   0,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   10,
+   9,
+   5,
+   4,
+   3,
+   2,
+   1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   11,
+   9,
+   5,
+   5,
+   4,
+   3,
+   2,
+   0,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   12,
+   9,
+   5,
+   5,
+   4,
+   3,
+   2,
+   1,
+   -1,
+   -1,
+   -1
+  ],
+  [
+   13,
+   9,
+   5,
+   5,
+   4,
+   4,
+   3,
+   2,
+   0,
+   -1,
+   -1
+  ],
+  [
+   14,
+   9,
+   5,
+   5,
+   4,
+   4,
+   3,
+   2,
+   1,
+   -1,
+   -1
+  ],
+  [
+   15,
+   9,
+   5,
+   5,
+   4,
+   4,
+   4,
+   3,
+   2,
+   0,
+   -1
+  ],
+  [
+   16,
+   9,
+   5,
+   5,
+   4,
+   4,
+   4,
+   3,
+   2,
+   1,
+   -1
+  ],
+  [
+   17,
+   9,
+   5,
+   5,
+   4,
+   4,
+   4,
+   3,
+   3,
+   2,
+   0
+  ],
+  [
+   18,
+   9,
+   5,
+   5,
+   4,
+   4,
+   4,
+   3,
+   3,
+   2,
+   1
+  ],
+  [
+   19,
+   9,
+   5,
+   5,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   2
+  ],
+  [
+   20,
+   9,
+   5,
+   5,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   3
+  ]
+ ],
+ "features": {
+  "Barbarian": {
+   "Whirling Frenzy": {
+    "lose": [
+     "Indomitable Will",
+     "Greater Rage",
+     "Mighty Rage"
+    ],
+    "gain": [
+     [
+      1,
+      "Whirling frenzy instead of rage: +4 Str, +2 dodge bonus to AC and on Reflex saves, one extra attack a round at the highest base attack bonus (all attacks that round −2); not with another rage (change the rage buff on the sheet)"
+     ],
+     [
+      11,
+      "Whirling frenzy: +6 Str, +3 dodge bonus to AC and on Reflex saves (instead of greater rage)"
+     ],
+     [
+      14,
+      "Evasion while in a whirling frenzy (instead of indomitable will)"
+     ],
+     [
+      20,
+      "Whirling frenzy: +8 Str, +4 dodge bonus to AC and on Reflex saves (instead of mighty rage)"
+     ]
+    ]
+   }
+  },
+  "Ranger": {
+   "Favored Environment": {
+    "lose": [
+     "Favored Enemy"
+    ],
+    "gain": [
+     [
+      1,
+      "Favored environment (aquatic, cold desert, temperate or warm desert, cold or temperate forest, warm forest, hills, marsh, mountain, plains or underground): +2 on Hide, Listen, Move Silently, Spot and Survival checks in it, and on Knowledge (nature) or (dungeoneering) checks about it"
+     ],
+     [
+      5,
+      "Another favored environment, and +2 more in one of them"
+     ],
+     [
+      10,
+      "Another favored environment, and +2 more in one of them"
+     ],
+     [
+      15,
+      "Another favored environment, and +2 more in one of them"
+     ],
+     [
+      20,
+      "Another favored environment, and +2 more in one of them"
+     ]
+    ]
+   },
+   "Archery": {
+    "exclusive": "combatStyle",
+    "style": true,
+    "default": true,
+    "lose": [
+     "Combat Style",
+     "Improved Combat Style",
+     "Combat Style Mastery"
+    ],
+    "grants": [
+     [
+      2,
+      "Combat Style",
+      "Rapid Shot"
+     ],
+     [
+      6,
+      "Improved Combat Style",
+      "Manyshot"
+     ],
+     [
+      11,
+      "Combat Style Mastery",
+      "Improved Precise Shot"
+     ]
+    ]
+   },
+   "Two-Weapon Combat": {
+    "exclusive": "combatStyle",
+    "style": true,
+    "lose": [
+     "Combat Style",
+     "Improved Combat Style",
+     "Combat Style Mastery"
+    ],
+    "grants": [
+     [
+      2,
+      "Combat Style",
+      "Two-Weapon Fighting"
+     ],
+     [
+      6,
+      "Improved Combat Style",
+      "Improved Two-Weapon Fighting"
+     ],
+     [
+      11,
+      "Combat Style Mastery",
+      "Greater Two-Weapon Fighting"
+     ]
+    ]
+   }
+  },
+  "Cleric": {
+   "Turning: Level Check": {
+    "gain": [
+     [
+      1,
+      "Turning undead by level check: a check (class level + Cha modifier) against each undead in turn, DC 10 + its HD + turn resistance + Cha modifier; up to 3 × level HD; success halts it, by 5 or more turns or rebukes it, HD half the level or less are destroyed or commanded"
+     ]
+    ],
+    "exclusive": "turning"
+   },
+   "Turning: Planar Banishment": {
+    "gain": [
+     [
+      1,
+      "Planar banishment instead of turning undead: a turning check against outsiders (HD + Cha modifier); turning damage 2d6 + level + Cha modifier in HD of evil outsiders (good ones for a cleric who rebukes) sent home, destroyed at twice their HD"
+     ]
+    ],
+    "exclusive": "turning"
+   }
+  },
+  "Paladin": {
+   "Turning: Level Check": {
+    "gain": [
+     [
+      4,
+      "Turning undead by level check (effective turning level: paladin level − 3): see the cleric's variant"
+     ]
+    ]
+   }
+  },
+  "Druid": {
+   "Aspect of Nature": {
+    "lose": [
+     "Wild Shape"
+    ],
+    "gain": [
+     [
+      5,
+      "Aspect of nature instead of wild shape: one aspect (agility, aquatic, elemental, endurance, flight, plant, poison, scent, speed, tooth and claw, vigor), 1 minute a level, each a daily use of wild shape"
+     ],
+     [
+      6,
+      "Aspect of nature: 2 a day"
+     ],
+     [
+      7,
+      "Aspect of nature: 3 a day"
+     ],
+     [
+      8,
+      "Aspect of nature: two at once"
+     ],
+     [
+      10,
+      "Aspect of nature: 4 a day"
+     ],
+     [
+      11,
+      "Aspect of nature: three at once"
+     ],
+     [
+      14,
+      "Aspect of nature: 5 a day"
+     ],
+     [
+      15,
+      "Aspect of nature: four at once"
+     ],
+     [
+      18,
+      "Aspect of nature: 6 a day"
+     ]
+    ]
+   }
+  },
+  "Wizard": {
+   "Resistance to Energy": {
+    "school": "abj",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      1,
+      "Resistance to energy 1/day (touch, 1 hour): resistance 5 + ½ class level to one energy type (instead of a familiar)"
+     ]
+    ]
+   },
+   "Aura of Protection": {
+    "school": "abj",
+    "replaces": "feats",
+    "dropBonusFeats": true,
+    "lose": [
+     "Bonus Feat (Wizard)"
+    ],
+    "gain": [
+     [
+      5,
+      "Aura of protection 1/day (+1/day every five levels after 5th): deflection bonus to AC and resistance bonus on saves equal to the Int modifier, against one attack or spell (instead of wizard bonus feats)"
+     ]
+    ]
+   },
+   "Spontaneous Dispelling": {
+    "school": "abj",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      5,
+      "Spontaneous dispelling: lose 4 or more levels of prepared spells to cast dispel magic (instead of the specialty spell)"
+     ],
+     [
+      11,
+      "Spontaneous dispelling: lose 7 or more levels of prepared spells to cast greater dispel magic"
+     ]
+    ]
+   },
+   "Rapid Summoning": {
+    "school": "con",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      1,
+      "Rapid summoning: summon monster takes 1 standard action (instead of a familiar)"
+     ]
+    ]
+   },
+   "Enhanced Summoning": {
+    "school": "con",
+    "replaces": "feats",
+    "dropBonusFeats": true,
+    "lose": [
+     "Bonus Feat (Wizard)",
+     "Scribe Scroll"
+    ],
+    "gain": [
+     [
+      1,
+      "Augment Summoning instead of Scribe Scroll (instead of wizard bonus feats)"
+     ],
+     [
+      5,
+      "Summoned creatures: +2 to the DC to dispel them"
+     ],
+     [
+      10,
+      "Summoned creatures: +2 Str and Con"
+     ],
+     [
+      15,
+      "Summoned creatures: +4 to the DC to dispel them"
+     ],
+     [
+      20,
+      "Summoned creatures: +4 Str and Con"
+     ]
+    ],
+    "feats": [
+     [
+      1,
+      "Augment Summoning"
+     ]
+    ]
+   },
+   "Spontaneous Summoning": {
+    "school": "con",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      1,
+      "Spontaneous summoning: lose a prepared spell to cast a summon monster spell of a lower level (instead of the specialty spell)"
+     ]
+    ]
+   },
+   "Enhanced Awareness": {
+    "school": "div",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      1,
+      "Enhanced awareness: Sense Motive is a class skill; identify takes 10 minutes; arcane eye moves 20 ft.; +1 to the DCs of its divination spells (instead of a familiar)"
+     ]
+    ],
+    "skillsAdd": [
+     "sen"
+    ]
+   },
+   "Bonus Feat List": {
+    "school": "div",
+    "gain": [
+     [
+      5,
+      "Wizard bonus feats: no metamagic feats; Alertness, Blind-Fight, Improved Initiative, Lightning Reflexes and Skill Focus (Spot, Listen or Sense Motive) instead"
+     ]
+    ],
+    "bonusFeatsFrom": {
+     "removeMetamagic": true,
+     "add": [
+      "Alertness",
+      "Blind-Fight",
+      "Improved Initiative",
+      "Lightning Reflexes",
+      "Skill Focus"
+     ]
+    }
+   },
+   "Prescience": {
+    "school": "div",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      1,
+      "Prescience 1/day (+1/day every five levels): insight bonus equal to the Int modifier on one attack, save, skill or level check (instead of the specialty spell)"
+     ]
+    ]
+   },
+   "Cohort": {
+    "school": "enc",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      6,
+      "Cohort: a loyal 4th-level cohort (Leadership rules with the level two lower) (instead of a familiar)"
+     ]
+    ]
+   },
+   "Social Proficiency": {
+    "school": "enc",
+    "replaces": "feats",
+    "dropBonusFeats": true,
+    "lose": [
+     "Bonus Feat (Wizard)"
+    ],
+    "gain": [
+     [
+      1,
+      "Social proficiency: Bluff, Diplomacy, Gather Information, Intimidate and Sense Motive are class skills (instead of wizard bonus feats)"
+     ],
+     [
+      5,
+      "+2 competence bonus on one of those skills"
+     ],
+     [
+      10,
+      "+2 competence bonus on another of those skills"
+     ],
+     [
+      15,
+      "+2 competence bonus on another of those skills"
+     ],
+     [
+      20,
+      "+2 competence bonus on another of those skills"
+     ]
+    ],
+    "skillsAdd": [
+     "blf",
+     "dip",
+     "gif",
+     "int",
+     "sen"
+    ]
+   },
+   "Extended Enchantment": {
+    "school": "enc",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      1,
+      "Extended enchantment 1/day (+1 every two levels after 1st): an enchantment spell as if extended, same level (instead of the specialty spell)"
+     ]
+    ]
+   },
+   "Energy Affinity": {
+    "school": "evo",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      1,
+      "Energy affinity (one energy type): its evocation spells of that type at +1 caster level (instead of a familiar)"
+     ]
+    ]
+   },
+   "Energy Substitution": {
+    "school": "evo",
+    "replaces": "feats",
+    "dropBonusFeats": true,
+    "lose": [
+     "Bonus Feat (Wizard)"
+    ],
+    "gain": [
+     [
+      5,
+      "Energy substitution 1/day per five levels: change a spell's energy type (instead of wizard bonus feats)"
+     ]
+    ]
+   },
+   "Overcome Resistance": {
+    "school": "evo",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      1,
+      "Overcome resistance 1/day (+1 every two levels after 1st): targets' energy resistance 10 lower against the spell (instead of the specialty spell)"
+     ]
+    ]
+   },
+   "Chains of Disbelief": {
+    "school": "ill",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      1,
+      "Chains of disbelief: others get no +4 to disbelieve when told; proof still needs a Will save at +10 (instead of a familiar)"
+     ]
+    ]
+   },
+   "Shadow Shaper": {
+    "school": "ill",
+    "replaces": "feats",
+    "dropBonusFeats": true,
+    "lose": [
+     "Bonus Feat (Wizard)"
+    ],
+    "gain": [
+     [
+      1,
+      "Shadow shaper: Hide is a class skill (instead of wizard bonus feats)"
+     ],
+     [
+      5,
+      "Adds its Int modifier to Hide checks"
+     ],
+     [
+      10,
+      "+1 to the save DCs of its illusion spells"
+     ],
+     [
+      15,
+      "Hide in plain sight in any terrain"
+     ],
+     [
+      20,
+      "Total concealment where it would have concealment"
+     ]
+    ],
+    "skillsAdd": [
+     "hid"
+    ]
+   },
+   "Illusion Mastery": {
+    "school": "ill",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      1,
+      "Illusion mastery: two free illusion spells in the spellbook with each new spell level; illusion spells learned are mastered (Spell Mastery) (instead of the specialty spell)"
+     ]
+    ]
+   },
+   "Skeletal Minion": {
+    "school": "nec",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      1,
+      "Skeletal minion: a human warrior skeleton with HD equal to the class level (+½ level natural armor, +⅓ level Str and Dex) (instead of a familiar)"
+     ]
+    ]
+   },
+   "Undead Apotheosis": {
+    "school": "nec",
+    "replaces": "feats",
+    "dropBonusFeats": true,
+    "lose": [
+     "Bonus Feat (Wizard)"
+    ],
+    "gain": [
+     [
+      5,
+      "Undead apotheosis: +2 on saves against sleep, stun, paralysis, poison and disease (instead of wizard bonus feats)"
+     ],
+     [
+      10,
+      "+4 on saves against ability damage, ability drain and energy drain"
+     ],
+     [
+      15,
+      "+4 on saves against sleep, stun, paralysis, poison and disease"
+     ],
+     [
+      20,
+      "25% chance to ignore critical hits (light fortification)"
+     ]
+    ]
+   },
+   "Enhanced Undead": {
+    "school": "nec",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      1,
+      "Enhanced undead: undead it creates get +4 Str and Dex and +2 hp per HD (instead of the specialty spell)"
+     ]
+    ]
+   },
+   "Enhance Attribute": {
+    "school": "trs",
+    "replaces": "familiar",
+    "lose": [
+     "Summon Familiar"
+    ],
+    "gain": [
+     [
+      1,
+      "Enhance attribute 1/day (+1 per five levels): +2 enhancement bonus to one ability for 1 minute a level (swift action) (instead of a familiar)"
+     ]
+    ]
+   },
+   "Spell Versatility": {
+    "school": "trs",
+    "replaces": "feats",
+    "dropBonusFeats": true,
+    "lose": [
+     "Bonus Feat (Wizard)"
+    ],
+    "gain": [
+     [
+      5,
+      "Spell versatility: one spell (any school) treated as transmutation, one more every five levels (instead of wizard bonus feats)"
+     ]
+    ]
+   },
+   "Transmutable Memory": {
+    "school": "trs",
+    "replaces": "slot",
+    "noSlot": true,
+    "gain": [
+     [
+      1,
+      "Transmutable memory 1/day: swap prepared spell levels up to half the class level (instead of the specialty spell)"
+     ]
+    ]
+   }
+  }
+ },
+ "arcaneDomains": {
+  "Abjuration": [
+   [
+    1,
+    "Shield"
+   ],
+   [
+    2,
+    "Resist Energy"
+   ],
+   [
+    3,
+    "Dispel Magic"
+   ],
+   [
+    4,
+    "Remove Curse"
+   ],
+   [
+    5,
+    "Mage's Private Sanctum"
+   ],
+   [
+    6,
+    "Dispel Magic, Greater"
+   ],
+   [
+    7,
+    "Banishment"
+   ],
+   [
+    8,
+    "Mind Blank"
+   ],
+   [
+    9,
+    "Prismatic Sphere"
+   ]
+  ],
+  "Antimagic": [
+   [
+    1,
+    "Protection from Chaos"
+   ],
+   [
+    1,
+    "Protection from Evil"
+   ],
+   [
+    1,
+    "Protection from Good"
+   ],
+   [
+    1,
+    "Protection from Law"
+   ],
+   [
+    2,
+    "Obscure Object"
+   ],
+   [
+    3,
+    "Dispel Magic"
+   ],
+   [
+    4,
+    "Globe of Invulnerability, Lesser"
+   ],
+   [
+    5,
+    "Break Enchantment"
+   ],
+   [
+    6,
+    "Antimagic Field"
+   ],
+   [
+    7,
+    "Spell Turning"
+   ],
+   [
+    8,
+    "Protection from Spells"
+   ],
+   [
+    9,
+    "Mage's Disjunction"
+   ]
+  ],
+  "Battle": [
+   [
+    1,
+    "True Strike"
+   ],
+   [
+    2,
+    "Protection from Arrows"
+   ],
+   [
+    3,
+    "Magic Weapon, Greater"
+   ],
+   [
+    4,
+    "Fire Shield"
+   ],
+   [
+    5,
+    "Interposing Hand"
+   ],
+   [
+    6,
+    "Transformation"
+   ],
+   [
+    7,
+    "Power Word Blind"
+   ],
+   [
+    8,
+    "Moment of Prescience"
+   ],
+   [
+    9,
+    "Time Stop"
+   ]
+  ],
+  "Cold": [
+   [
+    1,
+    "Chill Touch"
+   ],
+   [
+    2,
+    "Chill Metal"
+   ],
+   [
+    3,
+    "Sleet Storm"
+   ],
+   [
+    4,
+    "Wall of Ice"
+   ],
+   [
+    5,
+    "Cone of Cold"
+   ],
+   [
+    6,
+    "Freezing Sphere"
+   ],
+   [
+    7,
+    "Delayed Blast Fireball",
+    "cold"
+   ],
+   [
+    8,
+    "Polar Ray"
+   ],
+   [
+    9,
+    "Meteor Swarm",
+    "cold"
+   ]
+  ],
+  "Conjuration": [
+   [
+    1,
+    "Mage Armor"
+   ],
+   [
+    2,
+    "Web"
+   ],
+   [
+    3,
+    "Stinking Cloud"
+   ],
+   [
+    4,
+    "Summon Monster IV"
+   ],
+   [
+    5,
+    "Wall of Stone"
+   ],
+   [
+    6,
+    "Acid Fog"
+   ],
+   [
+    7,
+    "Summon Monster VII"
+   ],
+   [
+    8,
+    "Maze"
+   ],
+   [
+    9,
+    "Gate"
+   ]
+  ],
+  "Divination": [
+   [
+    1,
+    "Detect Secret Doors"
+   ],
+   [
+    2,
+    "See Invisibility"
+   ],
+   [
+    3,
+    "Arcane Sight"
+   ],
+   [
+    4,
+    "Arcane Eye"
+   ],
+   [
+    5,
+    "Prying Eyes"
+   ],
+   [
+    6,
+    "True Seeing"
+   ],
+   [
+    7,
+    "Arcane Sight, Greater"
+   ],
+   [
+    8,
+    "Discern Location"
+   ],
+   [
+    9,
+    "Foresight"
+   ]
+  ],
+  "Enchantment": [
+   [
+    1,
+    "Charm Person"
+   ],
+   [
+    2,
+    "Hideous Laughter"
+   ],
+   [
+    3,
+    "Suggestion"
+   ],
+   [
+    4,
+    "Confusion"
+   ],
+   [
+    5,
+    "Hold Monster"
+   ],
+   [
+    6,
+    "Heroism, Greater"
+   ],
+   [
+    7,
+    "Insanity"
+   ],
+   [
+    8,
+    "Charm Monster, Mass"
+   ],
+   [
+    9,
+    "Dominate Monster"
+   ]
+  ],
+  "Evocation": [
+   [
+    1,
+    "Magic Missile"
+   ],
+   [
+    2,
+    "Flaming Sphere"
+   ],
+   [
+    3,
+    "Lightning Bolt"
+   ],
+   [
+    4,
+    "Shout"
+   ],
+   [
+    5,
+    "Wall of Force"
+   ],
+   [
+    6,
+    "Forceful Hand"
+   ],
+   [
+    7,
+    "Mage's Sword"
+   ],
+   [
+    8,
+    "Telekinetic Sphere"
+   ],
+   [
+    9,
+    "Crushing Hand"
+   ]
+  ],
+  "Fire": [
+   [
+    1,
+    "Burning Hands"
+   ],
+   [
+    2,
+    "Scorching Ray"
+   ],
+   [
+    3,
+    "Fireball"
+   ],
+   [
+    4,
+    "Wall of Fire"
+   ],
+   [
+    5,
+    "Cone of Cold",
+    "fire"
+   ],
+   [
+    6,
+    "Summon Monster VI",
+    "fire creatures only"
+   ],
+   [
+    7,
+    "Delayed Blast Fireball"
+   ],
+   [
+    8,
+    "Incendiary Cloud"
+   ],
+   [
+    9,
+    "Meteor Swarm"
+   ]
+  ],
+  "Illusion": [
+   [
+    1,
+    "Disguise Self"
+   ],
+   [
+    2,
+    "Invisibility"
+   ],
+   [
+    3,
+    "Major Image"
+   ],
+   [
+    4,
+    "Phantasmal Killer"
+   ],
+   [
+    5,
+    "Shadow Evocation"
+   ],
+   [
+    6,
+    "Mislead"
+   ],
+   [
+    7,
+    "Invisibility, Mass"
+   ],
+   [
+    8,
+    "Scintillating Pattern"
+   ],
+   [
+    9,
+    "Shades"
+   ]
+  ],
+  "Necromancy": [
+   [
+    1,
+    "Ray of Enfeeblement"
+   ],
+   [
+    2,
+    "False Life"
+   ],
+   [
+    3,
+    "Vampiric Touch"
+   ],
+   [
+    4,
+    "Fear"
+   ],
+   [
+    5,
+    "Waves of Fatigue"
+   ],
+   [
+    6,
+    "Circle of Death"
+   ],
+   [
+    7,
+    "Control Undead"
+   ],
+   [
+    8,
+    "Horrid Wilting"
+   ],
+   [
+    9,
+    "Energy Drain"
+   ]
+  ],
+  "Storm": [
+   [
+    1,
+    "Obscuring Mist"
+   ],
+   [
+    2,
+    "Gust of Wind"
+   ],
+   [
+    3,
+    "Lightning Bolt"
+   ],
+   [
+    4,
+    "Ice Storm"
+   ],
+   [
+    5,
+    "Control Winds"
+   ],
+   [
+    6,
+    "Chain Lightning"
+   ],
+   [
+    7,
+    "Control Weather"
+   ],
+   [
+    8,
+    "Whirlwind"
+   ],
+   [
+    9,
+    "Storm of Vengeance"
+   ]
+  ],
+  "Transmutation": [
+   [
+    1,
+    "Expeditious Retreat"
+   ],
+   [
+    2,
+    "Levitate"
+   ],
+   [
+    3,
+    "Haste"
+   ],
+   [
+    4,
+    "Polymorph"
+   ],
+   [
+    5,
+    "Baleful Polymorph"
+   ],
+   [
+    6,
+    "Disintegrate"
+   ],
+   [
+    7,
+    "Reverse Gravity"
+   ],
+   [
+    8,
+    "Iron Body"
+   ],
+   [
+    9,
+    "Shapechange"
+   ]
+  ]
+ }
+}

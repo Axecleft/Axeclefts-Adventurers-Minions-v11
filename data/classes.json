@@ -1,0 +1,625 @@
+{
+ "_note": "Class extras the D35E class items don't carry: bonus feat levels and the feats each may be. Keys are the class's English name. 'levels' are class levels; 'pick' entries offer one feat from a fixed pair, prerequisites ignored. 'abilities' is the order the class wants its scores in (used by Place by class). 'special': the slot takes the class's special abilities named in 'from' (class abilities in D35E's Class Abilities compendium; each once, except Skill Mastery); 'orFeat': a general feat may be taken instead (the rogue's 10th, 13th, 16th and 19th levels).",
+ "Fighter": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20
+    ],
+    "from": [
+     "Blind-Fight",
+     "Combat Expertise",
+     "Improved Disarm",
+     "Improved Feint",
+     "Improved Trip",
+     "Whirlwind Attack",
+     "Combat Reflexes",
+     "Dodge",
+     "Mobility",
+     "Spring Attack",
+     "Exotic Weapon Proficiency",
+     "Improved Critical",
+     "Improved Initiative",
+     "Improved Shield Bash",
+     "Improved Unarmed Strike",
+     "Deflect Arrows",
+     "Improved Grapple",
+     "Snatch Arrows",
+     "Stunning Fist",
+     "Mounted Combat",
+     "Mounted Archery",
+     "Ride-By Attack",
+     "Spirited Charge",
+     "Trample",
+     "Point Blank Shot",
+     "Far Shot",
+     "Precise Shot",
+     "Rapid Shot",
+     "Manyshot",
+     "Shot on the Run",
+     "Improved Precise Shot",
+     "Power Attack",
+     "Cleave",
+     "Great Cleave",
+     "Improved Bull Rush",
+     "Improved Overrun",
+     "Improved Sunder",
+     "Quick Draw",
+     "Rapid Reload",
+     "Two-Weapon Fighting",
+     "Two-Weapon Defense",
+     "Improved Two-Weapon Fighting",
+     "Greater Two-Weapon Fighting",
+     "Weapon Finesse",
+     "Weapon Focus",
+     "Weapon Specialization",
+     "Greater Weapon Focus",
+     "Greater Weapon Specialization"
+    ]
+   }
+  ],
+  "abilities": [
+   "str",
+   "con",
+   "dex",
+   "wis",
+   "int",
+   "cha"
+  ]
+ },
+ "Wizard": {
+  "bonusFeats": [
+   {
+    "levels": [
+     5,
+     10,
+     15,
+     20
+    ],
+    "from": [
+     "Empower Spell",
+     "Enlarge Spell",
+     "Extend Spell",
+     "Heighten Spell",
+     "Maximize Spell",
+     "Quicken Spell",
+     "Silent Spell",
+     "Still Spell",
+     "Widen Spell",
+     "Brew Potion",
+     "Craft Magic Arms and Armor",
+     "Craft Rod",
+     "Craft Staff",
+     "Craft Wand",
+     "Craft Wondrous Item",
+     "Forge Ring",
+     "Scribe Scroll",
+     "Spell Mastery"
+    ]
+   }
+  ],
+  "abilities": [
+   "int",
+   "dex",
+   "con",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Monk": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1
+    ],
+    "from": [
+     "Improved Grapple",
+     "Stunning Fist"
+    ],
+    "ignorePrereqs": true
+   },
+   {
+    "levels": [
+     2
+    ],
+    "from": [
+     "Combat Reflexes",
+     "Deflect Arrows"
+    ],
+    "ignorePrereqs": true
+   },
+   {
+    "levels": [
+     6
+    ],
+    "from": [
+     "Improved Disarm",
+     "Improved Trip"
+    ],
+    "ignorePrereqs": true
+   }
+  ],
+  "abilities": [
+   "wis",
+   "dex",
+   "str",
+   "con",
+   "int",
+   "cha"
+  ]
+ },
+ "Psychic Warrior": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     2,
+     5,
+     8,
+     11,
+     14,
+     17,
+     20
+    ],
+    "from": [
+     "Blind-Fight",
+     "Combat Expertise",
+     "Improved Disarm",
+     "Improved Feint",
+     "Improved Trip",
+     "Whirlwind Attack",
+     "Combat Reflexes",
+     "Dodge",
+     "Mobility",
+     "Spring Attack",
+     "Exotic Weapon Proficiency",
+     "Improved Critical",
+     "Improved Initiative",
+     "Improved Shield Bash",
+     "Improved Unarmed Strike",
+     "Deflect Arrows",
+     "Improved Grapple",
+     "Snatch Arrows",
+     "Stunning Fist",
+     "Mounted Combat",
+     "Mounted Archery",
+     "Ride-By Attack",
+     "Spirited Charge",
+     "Trample",
+     "Point Blank Shot",
+     "Far Shot",
+     "Precise Shot",
+     "Rapid Shot",
+     "Manyshot",
+     "Shot on the Run",
+     "Improved Precise Shot",
+     "Power Attack",
+     "Cleave",
+     "Great Cleave",
+     "Improved Bull Rush",
+     "Improved Overrun",
+     "Improved Sunder",
+     "Quick Draw",
+     "Rapid Reload",
+     "Two-Weapon Fighting",
+     "Two-Weapon Defense",
+     "Improved Two-Weapon Fighting",
+     "Greater Two-Weapon Fighting",
+     "Weapon Finesse",
+     "Weapon Focus",
+     "Weapon Specialization",
+     "Greater Weapon Focus",
+     "Greater Weapon Specialization"
+    ],
+    "psionic": true
+   }
+  ],
+  "abilities": [
+   "str",
+   "wis",
+   "con",
+   "dex",
+   "int",
+   "cha"
+  ]
+ },
+ "Psion (Egoist)": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     5,
+     10,
+     15,
+     20
+    ],
+    "psionic": true,
+    "from": []
+   }
+  ],
+  "abilities": [
+   "int",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Psion (Kineticist)": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     5,
+     10,
+     15,
+     20
+    ],
+    "psionic": true,
+    "from": []
+   }
+  ],
+  "abilities": [
+   "int",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Psion (Nomad)": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     5,
+     10,
+     15,
+     20
+    ],
+    "psionic": true,
+    "from": []
+   }
+  ],
+  "abilities": [
+   "int",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Psion (Seer)": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     5,
+     10,
+     15,
+     20
+    ],
+    "psionic": true,
+    "from": []
+   }
+  ],
+  "abilities": [
+   "int",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Psion (Shaper)": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     5,
+     10,
+     15,
+     20
+    ],
+    "psionic": true,
+    "from": []
+   }
+  ],
+  "abilities": [
+   "int",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Psion (Telepath)": {
+  "bonusFeats": [
+   {
+    "levels": [
+     1,
+     5,
+     10,
+     15,
+     20
+    ],
+    "psionic": true,
+    "from": []
+   }
+  ],
+  "abilities": [
+   "int",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Barbarian": {
+  "abilities": [
+   "str",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "int"
+  ]
+ },
+ "Bard": {
+  "abilities": [
+   "cha",
+   "dex",
+   "int",
+   "con",
+   "wis",
+   "str"
+  ]
+ },
+ "Cleric": {
+  "abilities": [
+   "wis",
+   "con",
+   "str",
+   "cha",
+   "dex",
+   "int"
+  ]
+ },
+ "Druid": {
+  "abilities": [
+   "wis",
+   "con",
+   "dex",
+   "int",
+   "cha",
+   "str"
+  ]
+ },
+ "Paladin": {
+  "abilities": [
+   "cha",
+   "str",
+   "con",
+   "wis",
+   "dex",
+   "int"
+  ]
+ },
+ "Ranger": {
+  "abilities": [
+   "dex",
+   "wis",
+   "str",
+   "con",
+   "int",
+   "cha"
+  ]
+ },
+ "Rogue": {
+  "bonusFeats": [
+   {
+    "levels": [
+     10,
+     13,
+     16,
+     19
+    ],
+    "from": [
+     "Crippling Strike",
+     "Defensive Roll",
+     "Improved Evasion",
+     "Opportunist",
+     "Skill Mastery",
+     "Slippery Mind"
+    ],
+    "special": true,
+    "orFeat": true
+   }
+  ],
+  "abilities": [
+   "dex",
+   "int",
+   "con",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Sorcerer": {
+  "abilities": [
+   "cha",
+   "dex",
+   "con",
+   "wis",
+   "int",
+   "str"
+  ]
+ },
+ "Adept (NPC)": {
+  "abilities": [
+   "wis",
+   "con",
+   "dex",
+   "int",
+   "cha",
+   "str"
+  ]
+ },
+ "Aristocrat (NPC)": {
+  "abilities": [
+   "cha",
+   "int",
+   "wis",
+   "dex",
+   "con",
+   "str"
+  ]
+ },
+ "Commoner (NPC)": {
+  "abilities": [
+   "str",
+   "con",
+   "dex",
+   "wis",
+   "int",
+   "cha"
+  ]
+ },
+ "Expert (NPC)": {
+  "abilities": [
+   "int",
+   "dex",
+   "wis",
+   "cha",
+   "con",
+   "str"
+  ]
+ },
+ "Warrior (NPC)": {
+  "abilities": [
+   "str",
+   "con",
+   "dex",
+   "wis",
+   "int",
+   "cha"
+  ]
+ },
+ "Soulknife": {
+  "abilities": [
+   "dex",
+   "str",
+   "wis",
+   "con",
+   "int",
+   "cha"
+  ]
+ },
+ "Wilder": {
+  "abilities": [
+   "cha",
+   "con",
+   "dex",
+   "wis",
+   "int",
+   "str"
+  ]
+ },
+ "Arcane Archer": {
+  "abilities": [
+   "dex",
+   "str",
+   "con",
+   "int",
+   "wis",
+   "cha"
+  ]
+ },
+ "Arcane Trickster": {
+  "abilities": [
+   "int",
+   "dex",
+   "con",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Archmage": {
+  "abilities": [
+   "int",
+   "con",
+   "dex",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Assassin": {
+  "abilities": [
+   "dex",
+   "int",
+   "con",
+   "wis",
+   "cha",
+   "str"
+  ]
+ },
+ "Blackguard": {
+  "abilities": [
+   "str",
+   "cha",
+   "con",
+   "wis",
+   "dex",
+   "int"
+  ]
+ },
+ "Dwarven Defender": {
+  "abilities": [
+   "con",
+   "str",
+   "dex",
+   "wis",
+   "int",
+   "cha"
+  ]
+ },
+ "Eldritch Knight": {
+  "abilities": [
+   "int",
+   "str",
+   "con",
+   "dex",
+   "wis",
+   "cha"
+  ]
+ },
+ "Mystic Theurge": {
+  "abilities": [
+   "wis",
+   "int",
+   "con",
+   "dex",
+   "cha",
+   "str"
+  ]
+ }
+}

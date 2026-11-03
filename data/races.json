@@ -1,0 +1,558 @@
+{
+ "_note": "SRD details the D35E race items don't carry: size, automatic and bonus languages, favored class, vision, and extras (human bonus feat and skill points). Keys are the race's English name.",
+ "Human": {
+  "size": "med",
+  "languages": [
+   "common"
+  ],
+  "bonusLanguages": "any",
+  "favored": "any",
+  "bonusFeat": 1,
+  "skillPoints": {
+   "first": 4,
+   "perLevel": 1
+  }
+ },
+ "Dwarf, Hill": {
+  "size": "med",
+  "languages": [
+   "common",
+   "dwarven"
+  ],
+  "bonusLanguages": [
+   "giant",
+   "gnome",
+   "goblin",
+   "orc",
+   "terran",
+   "undercommon"
+  ],
+  "favored": "Fighter",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Dwarf, Mountain": {
+  "size": "med",
+  "languages": [
+   "common",
+   "dwarven"
+  ],
+  "bonusLanguages": [
+   "giant",
+   "gnome",
+   "goblin",
+   "orc",
+   "terran",
+   "undercommon"
+  ],
+  "favored": "Fighter",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Dwarf, Deep": {
+  "size": "med",
+  "languages": [
+   "common",
+   "dwarven"
+  ],
+  "bonusLanguages": [
+   "giant",
+   "gnome",
+   "goblin",
+   "orc",
+   "terran",
+   "undercommon"
+  ],
+  "favored": "Fighter",
+  "vision": {
+   "darkvision": 90
+  }
+ },
+ "Duergar": {
+  "size": "med",
+  "languages": [
+   "common",
+   "dwarven",
+   "undercommon"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "giant",
+   "goblin",
+   "orc",
+   "terran"
+  ],
+  "favored": "Fighter",
+  "vision": {
+   "darkvision": 120
+  }
+ },
+ "Elf, High": {
+  "size": "med",
+  "languages": [
+   "common",
+   "elven"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "gnoll",
+   "gnome",
+   "goblin",
+   "orc",
+   "sylvan"
+  ],
+  "favored": "Wizard",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Elf, Grey": {
+  "size": "med",
+  "languages": [
+   "common",
+   "elven"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "gnoll",
+   "gnome",
+   "goblin",
+   "orc",
+   "sylvan"
+  ],
+  "favored": "Wizard",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Elf, Wild": {
+  "size": "med",
+  "languages": [
+   "common",
+   "elven"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "gnoll",
+   "gnome",
+   "goblin",
+   "orc",
+   "sylvan"
+  ],
+  "favored": "Sorcerer",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Elf, Wood": {
+  "size": "med",
+  "languages": [
+   "common",
+   "elven"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "gnoll",
+   "gnome",
+   "goblin",
+   "orc",
+   "sylvan"
+  ],
+  "favored": "Ranger",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Elf, Aquatic": {
+  "size": "med",
+  "languages": [
+   "common",
+   "elven"
+  ],
+  "bonusLanguages": [
+   "aquan",
+   "draconic",
+   "gnoll",
+   "gnome",
+   "goblin",
+   "sylvan"
+  ],
+  "favored": "Fighter",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Elf, Drow": {
+  "size": "med",
+  "languages": [
+   "common",
+   "elven",
+   "undercommon"
+  ],
+  "bonusLanguages": [
+   "abyssal",
+   "aquan",
+   "draconic",
+   "gnome",
+   "goblin"
+  ],
+  "favored": "Wizard",
+  "vision": {
+   "darkvision": 120
+  }
+ },
+ "Gnome, Rock": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "gnome"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "dwarven",
+   "elven",
+   "giant",
+   "goblin",
+   "orc"
+  ],
+  "favored": "Bard",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Gnome, Forest": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "gnome",
+   "elven",
+   "sylvan"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "dwarven",
+   "giant",
+   "goblin",
+   "orc"
+  ],
+  "favored": "Bard",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Gnome, Svirfneblin": {
+  "size": "sm",
+  "languages": [
+   "gnome",
+   "terran",
+   "undercommon"
+  ],
+  "bonusLanguages": [
+   "common",
+   "dwarven",
+   "elven",
+   "giant",
+   "goblin",
+   "orc"
+  ],
+  "favored": "Rogue",
+  "vision": {
+   "darkvision": 120
+  }
+ },
+ "Half-Elf": {
+  "size": "med",
+  "languages": [
+   "common",
+   "elven"
+  ],
+  "bonusLanguages": "any",
+  "favored": "any",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Half-Orc": {
+  "size": "med",
+  "languages": [
+   "common",
+   "orc"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "giant",
+   "gnoll",
+   "goblin",
+   "abyssal"
+  ],
+  "favored": "Barbarian",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Halfling, Lightfoot": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "halfling"
+  ],
+  "bonusLanguages": [
+   "dwarven",
+   "elven",
+   "gnome",
+   "goblin",
+   "orc"
+  ],
+  "favored": "Rogue"
+ },
+ "Halfling, Tallfellow": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "halfling"
+  ],
+  "bonusLanguages": [
+   "dwarven",
+   "elven",
+   "gnome",
+   "goblin",
+   "orc"
+  ],
+  "favored": "Rogue"
+ },
+ "Halfling, Deep": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "halfling"
+  ],
+  "bonusLanguages": [
+   "dwarven",
+   "elven",
+   "gnome",
+   "goblin",
+   "orc"
+  ],
+  "favored": "Rogue",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Aasimar": {
+  "size": "med",
+  "languages": [
+   "common",
+   "celestial"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "dwarven",
+   "elven",
+   "gnome",
+   "halfling",
+   "sylvan"
+  ],
+  "favored": "Paladin",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Tiefling": {
+  "size": "med",
+  "languages": [
+   "common",
+   "infernal"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "dwarven",
+   "elven",
+   "gnome",
+   "goblin",
+   "halfling",
+   "orc"
+  ],
+  "favored": "Rogue",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Goblin": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "goblin"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "elven",
+   "giant",
+   "gnoll",
+   "orc"
+  ],
+  "favored": "Rogue",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Kobold": {
+  "size": "sm",
+  "languages": [
+   "draconic"
+  ],
+  "bonusLanguages": [
+   "common",
+   "undercommon"
+  ],
+  "favored": "Sorcerer",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Orc": {
+  "size": "med",
+  "languages": [
+   "common",
+   "orc"
+  ],
+  "bonusLanguages": [
+   "dwarven",
+   "giant",
+   "gnoll",
+   "goblin",
+   "undercommon"
+  ],
+  "favored": "Barbarian",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Merfolk": {
+  "size": "med",
+  "languages": [
+   "common",
+   "aquan"
+  ],
+  "bonusLanguages": [
+   "aquan",
+   "draconic",
+   "elven",
+   "sylvan"
+  ],
+  "favored": "Bard",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Sprite, Pixie": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "sylvan"
+  ],
+  "bonusLanguages": "any",
+  "favored": "Sorcerer",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Dromite": {
+  "size": "sm",
+  "languages": [
+   "common"
+  ],
+  "bonusLanguages": [
+   "dwarven",
+   "gnome",
+   "goblin",
+   "terran"
+  ],
+  "favored": "Wilder",
+  "vision": {
+   "darkvision": 60
+  }
+ },
+ "Elan": {
+  "size": "med",
+  "languages": [
+   "common"
+  ],
+  "bonusLanguages": "any",
+  "favored": "Psion"
+ },
+ "Half-Giant": {
+  "size": "med",
+  "languages": [
+   "common"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "giant",
+   "gnoll",
+   "ignan"
+  ],
+  "favored": "Psychic Warrior",
+  "vision": {
+   "lowLight": true
+  }
+ },
+ "Maenad": {
+  "size": "med",
+  "languages": [
+   "common"
+  ],
+  "bonusLanguages": [
+   "aquan",
+   "draconic",
+   "elven",
+   "gnome",
+   "goblin",
+   "sylvan"
+  ],
+  "favored": "Wilder",
+  "customLanguages": [
+   "Maenad"
+  ]
+ },
+ "Xeph": {
+  "size": "med",
+  "languages": [
+   "common"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "elven",
+   "gnome",
+   "goblin",
+   "halfling",
+   "sylvan"
+  ],
+  "favored": "Soulknife",
+  "vision": {
+   "darkvision": 60
+  },
+  "customLanguages": [
+   "Xeph"
+  ]
+ },
+ "Goblin, Blue": {
+  "size": "sm",
+  "languages": [
+   "common",
+   "goblin"
+  ],
+  "bonusLanguages": [
+   "draconic",
+   "elven",
+   "giant",
+   "gnoll",
+   "orc"
+  ],
+  "favored": "Psion",
+  "vision": {
+   "darkvision": 60
+  }
+ }
+}

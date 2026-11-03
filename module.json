@@ -1,0 +1,58 @@
+{
+  "id": "axeclefts-adventurers-minions",
+  "title": "Axecleft's Adventurers and Minions",
+  "description": "Complete D35E characters and NPCs: build one step by step (race, abilities, classes and levels, hit points, skills, feats, spells, equipment), checked against the SRD rules, and D35E works out the rest. Random characters, one or many at once, and editing existing actors: add or change classes and levels and have the character redone.",
+  "version": "1.11.2.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315",
+    "maximum": "11"
+  },
+  "authors": [
+    {
+      "name": "Axecleft",
+      "url": "https://www.patreon.com/Axecleft",
+      "discord": "axecleft"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "D35E",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "axecleft-gemstones",
+        "type": "module",
+        "manifest": "https://github.com/Axecleft/Axeclefts-Gemstones-v11/releases/latest/download/module.json",
+        "reason": "The Treasure Generator, for the treasure a character's wealth buys (Armory and Curios have it too)"
+      },
+      {
+        "id": "axeclefts-armory",
+        "type": "module",
+        "manifest": "https://github.com/Axecleft/Armory-v11/releases/latest/download/module.json",
+        "reason": "Masterwork and magic arms and armor, special materials and abilities"
+      },
+      {
+        "id": "axeclefts-curios",
+        "type": "module",
+        "manifest": "https://github.com/Axecleft/Curios-v11/releases/latest/download/module.json",
+        "reason": "Potions, scrolls, wands, rings and wondrous items in a character's treasure"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/axecleft-tools.js",
+    "scripts/aam2.js"
+  ],
+  "styles": [],
+  "socket": true,
+  "languages": [],
+  "readme": "README.md",
+  "url": "https://github.com/Axecleft/Axeclefts-Adventurers-Minions-v11",
+  "manifest": "https://github.com/Axecleft/Axeclefts-Adventurers-Minions-v11/releases/latest/download/module.json",
+  "download": "https://github.com/Axecleft/Axeclefts-Adventurers-Minions-v11/releases/download/1.11.2.1/module.zip"
+}

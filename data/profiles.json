@@ -1,0 +1,1980 @@
+{
+ "_note": "Random characters: each class's choices, modelled on the DMG's sample NPCs. abilities: the order scores go in; increases: the ability raised at 4th, 8th, 12th, 16th, 20th; skills: in the order points are spent (class skills first); feats: in the order they're taken when prerequisites allow ({name, choice}); bonusFeats: a class bonus feat by class level, or the list wizard bonus feats come from; subSkills: Craft/Perform/Profession named for this class; alignments: likely alignments, most likely first. spells: spell names the class prefers (taken first, in this order). domains (Cleric): favourite domains, alignment domains only when the alignment fits; specialist (Wizard): the chance of a specialist, schools: favourite schools (codes), prohibit: the schools given up first. Psion, Wilder and Psychic Warrior: spells are their favourite powers (a psion's discipline comes from its class, e.g. Psion (Egoist)). label: the name of the class's own build (Standard when none). variants: other builds of the class ({ \"Archer\": { … } }): each replaces the fields it gives (abilities, feats, skills, spells…), and gear may change the standard gear: melee and ranged (the weapons), swap (the ranged weapon gets the better enhancement), noShield, offhand (a second melee weapon). Random picks a build at random (or the one asked); a GM's own builds (Build profiles, on the start page) are kept in the world. combatStyle (ranger): the combat style the build takes (Archery or Two-Weapon Combat).",
+ "classes": {
+  "Barbarian": {
+   "label": "Greataxe",
+   "abilities": [
+    "str",
+    "dex",
+    "con",
+    "wis",
+    "int",
+    "cha"
+   ],
+   "increases": [
+    "str",
+    "con",
+    "str",
+    "str",
+    "str"
+   ],
+   "skills": [
+    "clm",
+    "jmp",
+    "lis",
+    "sur",
+    "int",
+    "swm",
+    "spt"
+   ],
+   "feats": [
+    {
+     "name": "Weapon Focus",
+     "choice": "Greataxe"
+    },
+    "Power Attack",
+    "Dodge",
+    "Cleave",
+    {
+     "name": "Improved Critical",
+     "choice": "Greataxe"
+    },
+    "Toughness",
+    "Great Cleave",
+    "Improved Initiative",
+    "Iron Will",
+    "Mobility",
+    "Improved Sunder"
+   ],
+   "alignments": [
+    "cn",
+    "ce",
+    "cg",
+    "tn",
+    "ne",
+    "ng"
+   ],
+   "variants": {
+    "Spear charger": {
+     "feats": [
+      {
+       "name": "Weapon Focus",
+       "choice": "Longspear"
+      },
+      "Power Attack",
+      "Combat Reflexes",
+      "Cleave",
+      "Improved Bull Rush",
+      {
+       "name": "Improved Critical",
+       "choice": "Longspear"
+      },
+      "Toughness",
+      "Improved Initiative",
+      "Iron Will",
+      "Great Cleave"
+     ],
+     "gear": {
+      "melee": "Longspear",
+      "noShield": true
+     }
+    }
+   }
+  },
+  "Bard": {
+   "abilities": [
+    "cha",
+    "int",
+    "dex",
+    "con",
+    "str",
+    "wis"
+   ],
+   "increases": [
+    "cha",
+    "cha",
+    "cha",
+    "cha",
+    "cha"
+   ],
+   "skills": [
+    "dip",
+    "blf",
+    "prf",
+    "gif",
+    "sen",
+    "spl",
+    "tmb",
+    "dsc",
+    "umd",
+    "lis"
+   ],
+   "feats": [
+    "Improved Initiative",
+    "Dodge",
+    {
+     "name": "Skill Focus",
+     "choice": "dip"
+    },
+    "Mobility",
+    {
+     "name": "Skill Focus",
+     "choice": "spl"
+    },
+    {
+     "name": "Weapon Focus",
+     "choice": "Longsword"
+    },
+    "Combat Casting",
+    "Lightning Reflexes",
+    "Iron Will",
+    "Spell Penetration"
+   ],
+   "alignments": [
+    "cg",
+    "ng",
+    "cn",
+    "tn",
+    "ce",
+    "ne"
+   ],
+   "subSkills": {
+    "prf": "Sing"
+   },
+   "spells": [
+    "Detect Magic",
+    "Light",
+    "Mage Hand",
+    "Prestidigitation",
+    "Read Magic",
+    "Message",
+    "Cure Light Wounds",
+    "Charm Person",
+    "Silent Image",
+    "Grease",
+    "Invisibility",
+    "Cure Moderate Wounds",
+    "Heroism",
+    "Haste",
+    "Cure Serious Wounds",
+    "Good Hope",
+    "Dimension Door",
+    "Greater Invisibility",
+    "Cure Critical Wounds",
+    "Mass Suggestion",
+    "Song of Discord",
+    "Mass Cure Light Wounds",
+    "Greater Heroism",
+    "Mass Cure Moderate Wounds"
+   ]
+  },
+  "Cleric": {
+   "label": "Battle cleric",
+   "abilities": [
+    "wis",
+    "con",
+    "str",
+    "cha",
+    "int",
+    "dex"
+   ],
+   "increases": [
+    "wis",
+    "wis",
+    "wis",
+    "wis",
+    "wis"
+   ],
+   "skills": [
+    "coc",
+    "hea",
+    "lis",
+    "spl",
+    "kre",
+    "dip"
+   ],
+   "feats": [
+    {
+     "name": "Weapon Focus",
+     "choice": "Morningstar"
+    },
+    "Brew Potion",
+    "Lightning Reflexes",
+    "Combat Casting",
+    "Scribe Scroll",
+    "Extra Turning",
+    "Improved Initiative",
+    "Iron Will",
+    "Spell Penetration",
+    "Craft Wondrous Item",
+    "Toughness"
+   ],
+   "alignments": [
+    "lg",
+    "ng",
+    "cg",
+    "ln",
+    "tn",
+    "cn",
+    "le",
+    "ne",
+    "ce"
+   ],
+   "spells": [
+    "Guidance",
+    "Resistance",
+    "Light",
+    "Detect Magic",
+    "Cure Minor Wounds",
+    "Bless",
+    "Cure Light Wounds",
+    "Shield of Faith",
+    "Divine Favor",
+    "Protection from Evil",
+    "Bull's Strength",
+    "Cure Moderate Wounds",
+    "Hold Person",
+    "Silence",
+    "Bear's Endurance",
+    "Prayer",
+    "Cure Serious Wounds",
+    "Dispel Magic",
+    "Searing Light",
+    "Magic Vestment",
+    "Divine Power",
+    "Cure Critical Wounds",
+    "Freedom of Movement",
+    "Flame Strike",
+    "Righteous Might",
+    "Mass Cure Light Wounds",
+    "Heal",
+    "Blade Barrier",
+    "Destruction",
+    "Holy Word",
+    "Mass Cure Critical Wounds",
+    "Holy Aura",
+    "Miracle"
+   ],
+   "domains": [
+    "Good",
+    "Healing",
+    "Protection",
+    "Sun",
+    "War",
+    "Law",
+    "Strength",
+    "Luck",
+    "Evil",
+    "Destruction",
+    "Death",
+    "Chaos",
+    "Trickery",
+    "Knowledge",
+    "Travel"
+   ],
+   "variants": {
+    "Healer": {
+     "abilities": [
+      "wis",
+      "con",
+      "cha",
+      "dex",
+      "int",
+      "str"
+     ],
+     "skills": [
+      "hea",
+      "coc",
+      "dip",
+      "kre",
+      "spl",
+      "lis",
+      "sen"
+     ],
+     "feats": [
+      "Brew Potion",
+      "Scribe Scroll",
+      "Combat Casting",
+      "Extra Turning",
+      "Craft Wand",
+      "Improved Initiative",
+      "Iron Will",
+      "Spell Penetration",
+      "Craft Wondrous Item",
+      "Toughness"
+     ],
+     "domains": [
+      "Healing",
+      "Protection",
+      "Good",
+      "Sun",
+      "Luck",
+      "Law",
+      "Knowledge",
+      "Travel"
+     ],
+     "spells": [
+      "Guidance",
+      "Resistance",
+      "Cure Minor Wounds",
+      "Detect Magic",
+      "Light",
+      "Cure Light Wounds",
+      "Bless",
+      "Remove Fear",
+      "Protection from Evil",
+      "Cure Moderate Wounds",
+      "Lesser Restoration",
+      "Remove Paralysis",
+      "Aid",
+      "Cure Serious Wounds",
+      "Remove Disease",
+      "Remove Blindness/Deafness",
+      "Prayer",
+      "Cure Critical Wounds",
+      "Restoration",
+      "Neutralize Poison",
+      "Mass Cure Light Wounds",
+      "Raise Dead",
+      "Heal",
+      "Mass Cure Moderate Wounds",
+      "Regenerate",
+      "Mass Cure Serious Wounds",
+      "Mass Heal",
+      "True Resurrection"
+     ]
+    }
+   }
+  },
+  "Druid": {
+   "label": "Caster",
+   "abilities": [
+    "wis",
+    "dex",
+    "con",
+    "int",
+    "str",
+    "cha"
+   ],
+   "increases": [
+    "wis",
+    "wis",
+    "wis",
+    "wis",
+    "wis"
+   ],
+   "skills": [
+    "coc",
+    "kna",
+    "sur",
+    "hea",
+    "lis",
+    "spt",
+    "han",
+    "spl",
+    "swm"
+   ],
+   "feats": [
+    "Combat Casting",
+    "Improved Initiative",
+    "Natural Spell",
+    "Brew Potion",
+    "Lightning Reflexes",
+    "Iron Will",
+    "Spell Penetration",
+    "Toughness",
+    "Scribe Scroll"
+   ],
+   "alignments": [
+    "tn",
+    "ng",
+    "cn",
+    "ln",
+    "ne"
+   ],
+   "spells": [
+    "Guidance",
+    "Resistance",
+    "Cure Minor Wounds",
+    "Detect Magic",
+    "Entangle",
+    "Cure Light Wounds",
+    "Faerie Fire",
+    "Produce Flame",
+    "Barkskin",
+    "Flame Blade",
+    "Bull's Strength",
+    "Call Lightning",
+    "Cure Moderate Wounds",
+    "Spike Growth",
+    "Flame Strike",
+    "Ice Storm",
+    "Cure Serious Wounds",
+    "Wall of Fire",
+    "Cure Critical Wounds",
+    "Fire Seeds",
+    "Sunbeam",
+    "Heal",
+    "Earthquake",
+    "Whirlwind",
+    "Shambler"
+   ],
+   "variants": {
+    "Shapeshifter": {
+     "abilities": [
+      "wis",
+      "con",
+      "str",
+      "dex",
+      "int",
+      "cha"
+     ],
+     "feats": [
+      "Natural Spell",
+      "Toughness",
+      "Improved Initiative",
+      "Power Attack",
+      "Combat Casting",
+      "Iron Will",
+      "Lightning Reflexes",
+      "Dodge",
+      "Mobility"
+     ]
+    }
+   }
+  },
+  "Fighter": {
+   "label": "Sword and board",
+   "abilities": [
+    "str",
+    "con",
+    "dex",
+    "wis",
+    "int",
+    "cha"
+   ],
+   "increases": [
+    "str",
+    "str",
+    "str",
+    "str",
+    "str"
+   ],
+   "skills": [
+    "clm",
+    "jmp",
+    "int",
+    "rid",
+    "swm"
+   ],
+   "feats": [
+    {
+     "name": "Exotic Weapon Proficiency",
+     "choice": "Bastard Sword"
+    },
+    {
+     "name": "Weapon Focus",
+     "choice": "Bastard Sword"
+    },
+    "Power Attack",
+    "Improved Initiative",
+    {
+     "name": "Weapon Specialization",
+     "choice": "Bastard Sword"
+    },
+    "Cleave",
+    "Dodge",
+    "Great Cleave",
+    {
+     "name": "Improved Critical",
+     "choice": "Bastard Sword"
+    },
+    {
+     "name": "Greater Weapon Focus",
+     "choice": "Bastard Sword"
+    },
+    "Mobility",
+    "Spring Attack",
+    "Toughness",
+    "Iron Will",
+    {
+     "name": "Greater Weapon Specialization",
+     "choice": "Bastard Sword"
+    },
+    "Improved Sunder",
+    "Blind-Fight",
+    "Combat Reflexes",
+    "Lightning Reflexes"
+   ],
+   "alignments": [
+    "ln",
+    "lg",
+    "tn",
+    "ng",
+    "cn",
+    "le",
+    "ne",
+    "cg",
+    "ce"
+   ],
+   "variants": {
+    "Archer": {
+     "abilities": [
+      "dex",
+      "str",
+      "con",
+      "wis",
+      "int",
+      "cha"
+     ],
+     "feats": [
+      "Point Blank Shot",
+      "Precise Shot",
+      {
+       "name": "Weapon Focus",
+       "choice": "Longbow"
+      },
+      "Rapid Shot",
+      {
+       "name": "Weapon Specialization",
+       "choice": "Longbow"
+      },
+      "Manyshot",
+      "Far Shot",
+      "Improved Precise Shot",
+      {
+       "name": "Improved Critical",
+       "choice": "Longbow"
+      },
+      "Shot on the Run",
+      {
+       "name": "Greater Weapon Focus",
+       "choice": "Longbow"
+      },
+      "Dodge",
+      "Mobility",
+      "Improved Initiative",
+      {
+       "name": "Greater Weapon Specialization",
+       "choice": "Longbow"
+      },
+      "Lightning Reflexes",
+      "Iron Will"
+     ],
+     "gear": {
+      "ranged": "Composite Longbow",
+      "swap": true,
+      "noShield": true
+     }
+    },
+    "Two-handed": {
+     "feats": [
+      {
+       "name": "Weapon Focus",
+       "choice": "Greatsword"
+      },
+      "Power Attack",
+      "Cleave",
+      {
+       "name": "Weapon Specialization",
+       "choice": "Greatsword"
+      },
+      "Improved Sunder",
+      "Great Cleave",
+      {
+       "name": "Improved Critical",
+       "choice": "Greatsword"
+      },
+      "Improved Bull Rush",
+      {
+       "name": "Greater Weapon Focus",
+       "choice": "Greatsword"
+      },
+      "Improved Initiative",
+      "Toughness",
+      {
+       "name": "Greater Weapon Specialization",
+       "choice": "Greatsword"
+      },
+      "Iron Will",
+      "Blind-Fight",
+      "Combat Reflexes"
+     ],
+     "gear": {
+      "melee": "Greatsword",
+      "noShield": true
+     }
+    },
+    "Two-weapon": {
+     "abilities": [
+      "dex",
+      "str",
+      "con",
+      "wis",
+      "int",
+      "cha"
+     ],
+     "feats": [
+      "Two-Weapon Fighting",
+      {
+       "name": "Weapon Focus",
+       "choice": "Shortsword"
+      },
+      "Two-Weapon Defense",
+      {
+       "name": "Weapon Specialization",
+       "choice": "Shortsword"
+      },
+      "Improved Two-Weapon Fighting",
+      "Weapon Finesse",
+      "Dodge",
+      {
+       "name": "Improved Critical",
+       "choice": "Shortsword"
+      },
+      "Greater Two-Weapon Fighting",
+      "Mobility",
+      "Improved Initiative",
+      {
+       "name": "Greater Weapon Focus",
+       "choice": "Shortsword"
+      },
+      "Iron Will",
+      "Lightning Reflexes"
+     ],
+     "gear": {
+      "melee": "Shortsword",
+      "noShield": true,
+      "offhand": true
+     }
+    },
+    "Tripper": {
+     "abilities": [
+      "str",
+      "dex",
+      "int",
+      "con",
+      "wis",
+      "cha"
+     ],
+     "feats": [
+      {
+       "name": "Exotic Weapon Proficiency",
+       "choice": "Spiked Chain"
+      },
+      "Combat Expertise",
+      "Improved Trip",
+      "Combat Reflexes",
+      {
+       "name": "Weapon Focus",
+       "choice": "Spiked Chain"
+      },
+      "Power Attack",
+      {
+       "name": "Weapon Specialization",
+       "choice": "Spiked Chain"
+      },
+      "Improved Disarm",
+      "Improved Initiative",
+      {
+       "name": "Improved Critical",
+       "choice": "Spiked Chain"
+      },
+      "Iron Will",
+      {
+       "name": "Greater Weapon Focus",
+       "choice": "Spiked Chain"
+      },
+      "Dodge",
+      "Mobility"
+     ],
+     "gear": {
+      "melee": "Spiked Chain",
+      "noShield": true
+     }
+    }
+   }
+  },
+  "Monk": {
+   "label": "Kama",
+   "abilities": [
+    "wis",
+    "dex",
+    "str",
+    "con",
+    "int",
+    "cha"
+   ],
+   "increases": [
+    "dex",
+    "wis",
+    "dex",
+    "dex",
+    "wis"
+   ],
+   "skills": [
+    "tmb",
+    "blc",
+    "jmp",
+    "clm",
+    "hid",
+    "mos",
+    "lis",
+    "spt"
+   ],
+   "feats": [
+    "Dodge",
+    {
+     "name": "Weapon Focus",
+     "choice": "Kama"
+    },
+    "Improved Initiative",
+    "Mobility",
+    "Spring Attack",
+    {
+     "name": "Improved Critical",
+     "choice": "Unarmed Strike"
+    },
+    "Combat Reflexes",
+    "Iron Will",
+    "Lightning Reflexes",
+    "Toughness"
+   ],
+   "alignments": [
+    "lg",
+    "ln",
+    "le"
+   ],
+   "bonusFeats": {
+    "1": "Stunning Fist",
+    "2": "Deflect Arrows",
+    "6": "Improved Disarm"
+   },
+   "variants": {
+    "Unarmed": {
+     "feats": [
+      "Dodge",
+      {
+       "name": "Weapon Focus",
+       "choice": "Unarmed Strike"
+      },
+      "Improved Initiative",
+      "Power Attack",
+      "Mobility",
+      {
+       "name": "Improved Critical",
+       "choice": "Unarmed Strike"
+      },
+      "Spring Attack",
+      "Combat Reflexes",
+      "Iron Will",
+      "Toughness"
+     ]
+    }
+   }
+  },
+  "Paladin": {
+   "label": "Mounted",
+   "abilities": [
+    "cha",
+    "str",
+    "wis",
+    "con",
+    "int",
+    "dex"
+   ],
+   "increases": [
+    "wis",
+    "cha",
+    "cha",
+    "cha",
+    "cha"
+   ],
+   "skills": [
+    "coc",
+    "hea",
+    "rid",
+    "dip",
+    "sen",
+    "kre"
+   ],
+   "feats": [
+    "Mounted Combat",
+    {
+     "name": "Weapon Focus",
+     "choice": "Longsword"
+    },
+    "Ride-By Attack",
+    "Power Attack",
+    "Iron Will",
+    "Lightning Reflexes",
+    {
+     "name": "Improved Critical",
+     "choice": "Longsword"
+    },
+    "Extra Turning",
+    "Spirited Charge",
+    "Cleave"
+   ],
+   "alignments": [
+    "lg"
+   ],
+   "spells": [
+    "Bless",
+    "Divine Favor",
+    "Cure Light Wounds",
+    "Bull's Strength",
+    "Owl's Wisdom",
+    "Prayer",
+    "Heal Mount",
+    "Holy Sword",
+    "Cure Serious Wounds"
+   ],
+   "variants": {
+    "Two-handed": {
+     "abilities": [
+      "str",
+      "cha",
+      "con",
+      "wis",
+      "int",
+      "dex"
+     ],
+     "feats": [
+      "Power Attack",
+      {
+       "name": "Weapon Focus",
+       "choice": "Greatsword"
+      },
+      "Cleave",
+      "Improved Sunder",
+      "Iron Will",
+      {
+       "name": "Improved Critical",
+       "choice": "Greatsword"
+      },
+      "Great Cleave",
+      "Extra Turning",
+      "Lightning Reflexes",
+      "Toughness"
+     ],
+     "gear": {
+      "melee": "Greatsword",
+      "noShield": true
+     }
+    }
+   }
+  },
+  "Ranger": {
+   "label": "Archer",
+   "abilities": [
+    "dex",
+    "str",
+    "con",
+    "wis",
+    "int",
+    "cha"
+   ],
+   "increases": [
+    "dex",
+    "dex",
+    "dex",
+    "dex",
+    "dex"
+   ],
+   "skills": [
+    "hid",
+    "mos",
+    "spt",
+    "sur",
+    "lis",
+    "src",
+    "han",
+    "clm"
+   ],
+   "feats": [
+    {
+     "name": "Weapon Focus",
+     "choice": "Longbow"
+    },
+    "Point Blank Shot",
+    "Precise Shot",
+    "Quick Draw",
+    "Power Attack",
+    {
+     "name": "Improved Critical",
+     "choice": "Longbow"
+    },
+    "Far Shot",
+    "Dodge",
+    "Mobility",
+    "Shot on the Run",
+    "Lightning Reflexes"
+   ],
+   "alignments": [
+    "cg",
+    "ng",
+    "tn",
+    "cn",
+    "lg",
+    "ln",
+    "ce",
+    "ne"
+   ],
+   "spells": [
+    "Longstrider",
+    "Resist Energy",
+    "Entangle",
+    "Barkskin",
+    "Cat's Grace",
+    "Cure Light Wounds",
+    "Cure Moderate Wounds",
+    "Neutralize Poison",
+    "Freedom of Movement",
+    "Tree Stride"
+   ],
+   "variants": {
+    "Two-weapon": {
+     "abilities": [
+      "dex",
+      "str",
+      "con",
+      "wis",
+      "int",
+      "cha"
+     ],
+     "feats": [
+      {
+       "name": "Weapon Focus",
+       "choice": "Longsword"
+      },
+      "Power Attack",
+      "Dodge",
+      "Mobility",
+      {
+       "name": "Improved Critical",
+       "choice": "Longsword"
+      },
+      "Spring Attack",
+      "Improved Initiative",
+      "Combat Reflexes",
+      "Lightning Reflexes",
+      "Iron Will"
+     ],
+     "gear": {
+      "melee": "Longsword",
+      "offhand": true
+     },
+     "combatStyle": "Two-Weapon Combat"
+    }
+   },
+   "combatStyle": "Archery"
+  },
+  "Rogue": {
+   "label": "Swashbuckler",
+   "abilities": [
+    "dex",
+    "int",
+    "con",
+    "str",
+    "wis",
+    "cha"
+   ],
+   "increases": [
+    "dex",
+    "dex",
+    "dex",
+    "dex",
+    "dex"
+   ],
+   "skills": [
+    "hid",
+    "mos",
+    "src",
+    "spt",
+    "lis",
+    "dev",
+    "opl",
+    "tmb",
+    "blc",
+    "apr",
+    "umd",
+    "blf",
+    "dis",
+    "esc"
+   ],
+   "feats": [
+    "Improved Initiative",
+    "Weapon Finesse",
+    "Dodge",
+    "Point Blank Shot",
+    "Mobility",
+    {
+     "name": "Weapon Focus",
+     "choice": "Rapier"
+    },
+    "Combat Reflexes",
+    {
+     "name": "Improved Critical",
+     "choice": "Rapier"
+    },
+    "Precise Shot",
+    "Iron Will",
+    "Lightning Reflexes",
+    "Spring Attack"
+   ],
+   "alignments": [
+    "cn",
+    "tn",
+    "cg",
+    "ne",
+    "ce",
+    "ln",
+    "ng"
+   ],
+   "bonusFeats": {
+    "10": "Crippling Strike",
+    "13": "Improved Evasion",
+    "16": "Opportunist",
+    "19": "Defensive Roll"
+   },
+   "variants": {
+    "Archer": {
+     "feats": [
+      "Point Blank Shot",
+      "Precise Shot",
+      {
+       "name": "Weapon Focus",
+       "choice": "Shortbow"
+      },
+      "Rapid Shot",
+      "Improved Initiative",
+      "Far Shot",
+      "Shot on the Run",
+      "Dodge",
+      "Mobility",
+      {
+       "name": "Improved Critical",
+       "choice": "Shortbow"
+      },
+      "Iron Will",
+      "Lightning Reflexes"
+     ],
+     "gear": {
+      "ranged": "Composite Shortbow",
+      "swap": true
+     }
+    },
+    "Two-weapon": {
+     "feats": [
+      "Two-Weapon Fighting",
+      "Weapon Finesse",
+      {
+       "name": "Weapon Focus",
+       "choice": "Shortsword"
+      },
+      "Improved Initiative",
+      "Improved Two-Weapon Fighting",
+      "Dodge",
+      "Two-Weapon Defense",
+      "Mobility",
+      {
+       "name": "Improved Critical",
+       "choice": "Shortsword"
+      },
+      "Greater Two-Weapon Fighting",
+      "Iron Will"
+     ],
+     "gear": {
+      "melee": "Shortsword",
+      "noShield": true,
+      "offhand": true
+     }
+    },
+    "Face": {
+     "abilities": [
+      "cha",
+      "dex",
+      "int",
+      "con",
+      "wis",
+      "str"
+     ],
+     "skills": [
+      "blf",
+      "dip",
+      "sen",
+      "gif",
+      "dis",
+      "umd",
+      "spt",
+      "lis",
+      "hid",
+      "mos",
+      "src",
+      "dev",
+      "opl",
+      "tmb"
+     ],
+     "feats": [
+      {
+       "name": "Skill Focus",
+       "choice": "blf"
+      },
+      "Negotiator",
+      "Persuasive",
+      "Improved Initiative",
+      "Weapon Finesse",
+      "Deceitful",
+      {
+       "name": "Skill Focus",
+       "choice": "dip"
+      },
+      "Dodge",
+      "Iron Will",
+      "Lightning Reflexes"
+     ]
+    }
+   }
+  },
+  "Sorcerer": {
+   "label": "Blaster",
+   "abilities": [
+    "cha",
+    "dex",
+    "con",
+    "wis",
+    "int",
+    "str"
+   ],
+   "increases": [
+    "cha",
+    "cha",
+    "cha",
+    "cha",
+    "cha"
+   ],
+   "skills": [
+    "coc",
+    "spl",
+    "blf",
+    "kar"
+   ],
+   "feats": [
+    "Improved Initiative",
+    "Alertness",
+    "Toughness",
+    "Combat Casting",
+    "Spell Penetration",
+    "Craft Wand",
+    "Dodge",
+    {
+     "name": "Spell Focus",
+     "choice": "evo"
+    },
+    "Greater Spell Penetration",
+    "Lightning Reflexes"
+   ],
+   "alignments": [
+    "cn",
+    "cg",
+    "ce",
+    "tn",
+    "ng",
+    "ne",
+    "ln"
+   ],
+   "spells": [
+    "Detect Magic",
+    "Read Magic",
+    "Light",
+    "Ray of Frost",
+    "Prestidigitation",
+    "Mage Armor",
+    "Magic Missile",
+    "Shield",
+    "Sleep",
+    "Invisibility",
+    "Scorching Ray",
+    "Mirror Image",
+    "Fireball",
+    "Haste",
+    "Fly",
+    "Greater Invisibility",
+    "Dimension Door",
+    "Cone of Cold",
+    "Teleport",
+    "Disintegrate",
+    "Chain Lightning",
+    "Delayed Blast Fireball",
+    "Horrid Wilting",
+    "Meteor Swarm",
+    "Time Stop"
+   ],
+   "variants": {
+    "Charmer": {
+     "abilities": [
+      "cha",
+      "dex",
+      "con",
+      "wis",
+      "int",
+      "str"
+     ],
+     "skills": [
+      "coc",
+      "spl",
+      "blf",
+      "dip",
+      "kar"
+     ],
+     "feats": [
+      "Improved Initiative",
+      {
+       "name": "Spell Focus",
+       "choice": "enc"
+      },
+      "Combat Casting",
+      {
+       "name": "Greater Spell Focus",
+       "choice": "enc"
+      },
+      "Spell Penetration",
+      "Toughness",
+      "Iron Will",
+      "Greater Spell Penetration",
+      "Lightning Reflexes"
+     ],
+     "spells": [
+      "Detect Magic",
+      "Read Magic",
+      "Daze",
+      "Prestidigitation",
+      "Light",
+      "Charm Person",
+      "Sleep",
+      "Mage Armor",
+      "Color Spray",
+      "Hideous Laughter",
+      "Invisibility",
+      "Glitterdust",
+      "Suggestion",
+      "Haste",
+      "Charm Monster",
+      "Greater Invisibility",
+      "Dominate Person",
+      "Hold Monster",
+      "Mass Suggestion",
+      "Teleport",
+      "Insanity",
+      "Mass Charm Monster",
+      "Dominate Monster",
+      "Time Stop"
+     ]
+    }
+   }
+  },
+  "Wizard": {
+   "label": "Evoker",
+   "abilities": [
+    "int",
+    "dex",
+    "con",
+    "wis",
+    "str",
+    "cha"
+   ],
+   "increases": [
+    "int",
+    "int",
+    "int",
+    "int",
+    "int"
+   ],
+   "skills": [
+    "coc",
+    "spl",
+    "kar",
+    "kdu",
+    "khi",
+    "kpl",
+    "crf",
+    "lis",
+    "src",
+    "spt"
+   ],
+   "feats": [
+    "Improved Initiative",
+    "Combat Casting",
+    "Toughness",
+    "Spell Penetration",
+    "Great Fortitude",
+    {
+     "name": "Spell Focus",
+     "choice": "evo"
+    },
+    "Greater Spell Penetration",
+    "Lightning Reflexes",
+    "Iron Will"
+   ],
+   "alignments": [
+    "tn",
+    "ln",
+    "ng",
+    "cn",
+    "ne",
+    "le",
+    "lg",
+    "cg",
+    "ce"
+   ],
+   "bonusFeats": {
+    "wizard": [
+     "Craft Wondrous Item",
+     "Extend Spell",
+     "Empower Spell",
+     "Quicken Spell",
+     "Maximize Spell",
+     "Craft Magic Arms and Armor",
+     "Craft Wand",
+     "Still Spell",
+     "Silent Spell",
+     "Spell Mastery"
+    ]
+   },
+   "subSkills": {
+    "crf": "Alchemy"
+   },
+   "spells": [
+    "Detect Magic",
+    "Read Magic",
+    "Light",
+    "Ray of Frost",
+    "Mage Armor",
+    "Magic Missile",
+    "Shield",
+    "Sleep",
+    "Grease",
+    "Identify",
+    "Invisibility",
+    "Mirror Image",
+    "Scorching Ray",
+    "Web",
+    "Glitterdust",
+    "Fireball",
+    "Haste",
+    "Dispel Magic",
+    "Lightning Bolt",
+    "Fly",
+    "Stoneskin",
+    "Greater Invisibility",
+    "Dimension Door",
+    "Ice Storm",
+    "Cone of Cold",
+    "Teleport",
+    "Wall of Force",
+    "Disintegrate",
+    "Chain Lightning",
+    "Globe of Invulnerability",
+    "Limited Wish",
+    "Delayed Blast Fireball",
+    "Mordenkainen's Sword",
+    "Mind Blank",
+    "Prismatic Wall",
+    "Time Stop",
+    "Wish"
+   ],
+   "specialist": 0.5,
+   "schools": [
+    "evo",
+    "con",
+    "trs",
+    "div",
+    "abj",
+    "ill",
+    "nec",
+    "enc"
+   ],
+   "prohibit": [
+    "enc",
+    "nec",
+    "ill"
+   ],
+   "variants": {
+    "Controller": {
+     "specialist": 0.8,
+     "schools": [
+      "enc",
+      "ill",
+      "con",
+      "trs"
+     ],
+     "prohibit": [
+      "evo",
+      "nec"
+     ],
+     "feats": [
+      "Improved Initiative",
+      {
+       "name": "Spell Focus",
+       "choice": "enc"
+      },
+      "Combat Casting",
+      {
+       "name": "Greater Spell Focus",
+       "choice": "enc"
+      },
+      "Spell Penetration",
+      "Toughness",
+      {
+       "name": "Spell Focus",
+       "choice": "ill"
+      },
+      "Greater Spell Penetration",
+      "Iron Will",
+      "Lightning Reflexes"
+     ],
+     "spells": [
+      "Detect Magic",
+      "Read Magic",
+      "Daze",
+      "Prestidigitation",
+      "Mage Armor",
+      "Sleep",
+      "Charm Person",
+      "Color Spray",
+      "Grease",
+      "Hideous Laughter",
+      "Glitterdust",
+      "Web",
+      "Invisibility",
+      "Mirror Image",
+      "Hold Person",
+      "Deep Slumber",
+      "Haste",
+      "Slow",
+      "Suggestion",
+      "Confusion",
+      "Greater Invisibility",
+      "Solid Fog",
+      "Black Tentacles",
+      "Dominate Person",
+      "Hold Monster",
+      "Feeblemind",
+      "Mass Suggestion",
+      "Geas/Quest",
+      "Mass Hold Person",
+      "Power Word Stun",
+      "Mind Blank",
+      "Mass Charm Monster",
+      "Dominate Monster",
+      "Power Word Kill",
+      "Time Stop"
+     ]
+    },
+    "Summoner": {
+     "specialist": 0.8,
+     "schools": [
+      "con",
+      "trs",
+      "abj",
+      "div"
+     ],
+     "prohibit": [
+      "enc",
+      "ill"
+     ],
+     "feats": [
+      "Augment Summoning",
+      {
+       "name": "Spell Focus",
+       "choice": "con"
+      },
+      "Improved Initiative",
+      "Combat Casting",
+      {
+       "name": "Greater Spell Focus",
+       "choice": "con"
+      },
+      "Spell Penetration",
+      "Toughness",
+      "Iron Will",
+      "Lightning Reflexes"
+     ],
+     "spells": [
+      "Detect Magic",
+      "Read Magic",
+      "Light",
+      "Acid Splash",
+      "Mage Armor",
+      "Summon Monster I",
+      "Grease",
+      "Shield",
+      "Summon Monster II",
+      "Web",
+      "Glitterdust",
+      "Acid Arrow",
+      "Summon Monster III",
+      "Stinking Cloud",
+      "Haste",
+      "Summon Monster IV",
+      "Black Tentacles",
+      "Dimension Door",
+      "Summon Monster V",
+      "Cloudkill",
+      "Teleport",
+      "Summon Monster VI",
+      "Acid Fog",
+      "Summon Monster VII",
+      "Plane Shift",
+      "Summon Monster VIII",
+      "Maze",
+      "Summon Monster IX",
+      "Gate"
+     ]
+    }
+   }
+  },
+  "Adept (NPC)": {
+   "abilities": [
+    "wis",
+    "con",
+    "dex",
+    "int",
+    "cha",
+    "str"
+   ],
+   "increases": [
+    "wis",
+    "wis",
+    "wis",
+    "wis",
+    "wis"
+   ],
+   "skills": [
+    "coc",
+    "hea",
+    "spl",
+    "kna",
+    "sur"
+   ],
+   "feats": [
+    "Alertness",
+    "Combat Casting",
+    "Scribe Scroll",
+    "Toughness",
+    "Brew Potion",
+    "Iron Will",
+    "Spell Penetration"
+   ],
+   "alignments": [
+    "tn",
+    "ne",
+    "ng",
+    "cn",
+    "ln",
+    "ce",
+    "le"
+   ]
+  },
+  "Aristocrat (NPC)": {
+   "abilities": [
+    "cha",
+    "int",
+    "wis",
+    "dex",
+    "con",
+    "str"
+   ],
+   "increases": [
+    "cha",
+    "int",
+    "cha",
+    "cha",
+    "cha"
+   ],
+   "skills": [
+    "dip",
+    "blf",
+    "gif",
+    "sen",
+    "kno",
+    "rid",
+    "lis",
+    "spt"
+   ],
+   "feats": [
+    "Negotiator",
+    "Persuasive",
+    {
+     "name": "Skill Focus",
+     "choice": "dip"
+    },
+    "Iron Will",
+    {
+     "name": "Weapon Focus",
+     "choice": "Rapier"
+    },
+    "Alertness",
+    "Investigator"
+   ],
+   "alignments": [
+    "ln",
+    "le",
+    "lg",
+    "tn",
+    "ne",
+    "ng",
+    "cn",
+    "ce",
+    "cg"
+   ]
+  },
+  "Commoner (NPC)": {
+   "abilities": [
+    "str",
+    "con",
+    "dex",
+    "wis",
+    "int",
+    "cha"
+   ],
+   "increases": [
+    "con",
+    "str",
+    "con",
+    "con",
+    "con"
+   ],
+   "skills": [
+    "pro",
+    "clm",
+    "han",
+    "spt",
+    "lis",
+    "uro",
+    "swm"
+   ],
+   "feats": [
+    "Toughness",
+    "Endurance",
+    "Great Fortitude",
+    "Alertness",
+    "Run",
+    "Self-Sufficient"
+   ],
+   "alignments": [
+    "tn",
+    "ng",
+    "ln",
+    "cn",
+    "lg",
+    "ne"
+   ],
+   "subSkills": {
+    "pro": "Farmer"
+   }
+  },
+  "Expert (NPC)": {
+   "abilities": [
+    "int",
+    "dex",
+    "wis",
+    "cha",
+    "con",
+    "str"
+   ],
+   "increases": [
+    "int",
+    "int",
+    "int",
+    "int",
+    "int"
+   ],
+   "skills": [
+    "crf",
+    "apr",
+    "dip",
+    "gif",
+    "sen",
+    "kno",
+    "lis",
+    "spt",
+    "src",
+    "dsc"
+   ],
+   "feats": [
+    {
+     "name": "Skill Focus",
+     "choice": "apr"
+    },
+    "Alertness",
+    "Investigator",
+    "Negotiator",
+    "Diligent",
+    "Nimble Fingers",
+    "Iron Will"
+   ],
+   "alignments": [
+    "tn",
+    "ln",
+    "ng",
+    "cn",
+    "lg",
+    "ne"
+   ],
+   "subSkills": {
+    "crf": "Weaponsmithing"
+   }
+  },
+  "Warrior (NPC)": {
+   "abilities": [
+    "str",
+    "con",
+    "dex",
+    "wis",
+    "int",
+    "cha"
+   ],
+   "increases": [
+    "str",
+    "str",
+    "str",
+    "str",
+    "str"
+   ],
+   "skills": [
+    "clm",
+    "int",
+    "jmp",
+    "rid",
+    "swm"
+   ],
+   "feats": [
+    {
+     "name": "Weapon Focus",
+     "choice": "Longsword"
+    },
+    "Power Attack",
+    "Toughness",
+    "Improved Initiative",
+    "Dodge",
+    "Cleave",
+    "Iron Will"
+   ],
+   "alignments": [
+    "ln",
+    "le",
+    "tn",
+    "ne",
+    "cn",
+    "lg",
+    "ng",
+    "ce",
+    "cg"
+   ]
+  },
+  "Psion": {
+   "abilities": [
+    "int",
+    "dex",
+    "con",
+    "wis",
+    "cha",
+    "str"
+   ],
+   "increases": [
+    "int",
+    "int",
+    "int",
+    "int",
+    "int"
+   ],
+   "skills": [
+    "coc",
+    "psi",
+    "kps",
+    "kar",
+    "spt",
+    "lis"
+   ],
+   "feats": [
+    "Psionic Body",
+    "Improved Initiative",
+    "Toughness",
+    "Alertness",
+    "Psionic Endowment",
+    "Lightning Reflexes",
+    "Iron Will",
+    "Dodge",
+    "Overchannel"
+   ],
+   "alignments": [
+    "tn",
+    "ln",
+    "ng",
+    "cn",
+    "lg",
+    "ne",
+    "cg",
+    "le",
+    "ce"
+   ],
+   "spells": [
+    "Mind Thrust",
+    "Force Screen",
+    "Inertial Armor",
+    "Crystal Shard",
+    "Energy Ray",
+    "Vigor",
+    "Concussion Blast",
+    "Energy Push",
+    "Ego Whip",
+    "Id Insinuation",
+    "Body Equilibrium",
+    "Biofeedback",
+    "Dispel Psionics",
+    "Body Adjustment",
+    "Mental Barrier",
+    "Energy Adaptation",
+    "Death Urge",
+    "Psychic Crush",
+    "Energy Wave",
+    "Ultrablast",
+    "Bend Reality",
+    "Microcosm"
+   ]
+  },
+  "Wilder": {
+   "abilities": [
+    "cha",
+    "dex",
+    "con",
+    "wis",
+    "int",
+    "str"
+   ],
+   "increases": [
+    "cha",
+    "cha",
+    "cha",
+    "cha",
+    "cha"
+   ],
+   "skills": [
+    "coc",
+    "psi",
+    "spt",
+    "lis",
+    "int",
+    "blf"
+   ],
+   "feats": [
+    "Improved Initiative",
+    "Toughness",
+    "Psionic Body",
+    "Alertness",
+    "Psionic Endowment",
+    "Lightning Reflexes",
+    "Iron Will",
+    "Dodge"
+   ],
+   "alignments": [
+    "cn",
+    "cg",
+    "tn",
+    "ng",
+    "ce",
+    "ne"
+   ],
+   "spells": [
+    "Mind Thrust",
+    "Force Screen",
+    "Inertial Armor",
+    "Crystal Shard",
+    "Energy Ray",
+    "Vigor",
+    "Concussion Blast",
+    "Energy Push",
+    "Ego Whip",
+    "Id Insinuation",
+    "Body Equilibrium",
+    "Biofeedback",
+    "Dispel Psionics",
+    "Body Adjustment",
+    "Mental Barrier",
+    "Energy Adaptation",
+    "Death Urge",
+    "Psychic Crush",
+    "Energy Wave",
+    "Ultrablast",
+    "Bend Reality",
+    "Microcosm"
+   ]
+  },
+  "Psychic Warrior": {
+   "abilities": [
+    "str",
+    "con",
+    "wis",
+    "dex",
+    "int",
+    "cha"
+   ],
+   "increases": [
+    "str",
+    "str",
+    "con",
+    "str",
+    "str"
+   ],
+   "skills": [
+    "coc",
+    "clm",
+    "jmp",
+    "spt",
+    "psi"
+   ],
+   "feats": [
+    "Power Attack",
+    "Psionic Weapon",
+    {
+     "name": "Weapon Focus",
+     "choice": "Longsword"
+    },
+    "Improved Initiative",
+    "Cleave",
+    "Psionic Body",
+    "Toughness",
+    "Deep Impact",
+    "Iron Will",
+    "Great Fortitude"
+   ],
+   "alignments": [
+    "ln",
+    "tn",
+    "lg",
+    "ng",
+    "le",
+    "ne",
+    "cn"
+   ],
+   "spells": [
+    "Vigor",
+    "Force Screen",
+    "Inertial Armor",
+    "Expansion",
+    "Claws of the Beast",
+    "Thicken Skin",
+    "Biofeedback",
+    "Body Adjustment",
+    "Body Equilibrium",
+    "Feat Leech",
+    "Animal Affinity",
+    "Mental Barrier",
+    "Energy Adaptation",
+    "Dimension Swap"
+   ]
+  }
+ }
+}

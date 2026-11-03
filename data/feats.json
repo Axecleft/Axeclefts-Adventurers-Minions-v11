@@ -1,0 +1,585 @@
+{
+ "_note": "SRD feat prerequisites, keyed by the feat's English name without its choice. ab: ability minimums; bab; feats: needed feats ('X*' = the same weapon/skill/school; 'X=con' = that choice); skills: ranks; cls: class levels; cl: caster level; char: character level; can: turnUndead, wildShape, arcane, divine, spells; special: shown, not checked; choice: weapon, exotic, skill, school, crossbow; multi: can be taken more than once.",
+ "feats": {
+  "Acrobatic": {},
+  "Agile": {},
+  "Alertness": {},
+  "Animal Affinity": {},
+  "Athletic": {},
+  "Blind-Fight": {},
+  "Combat Casting": {},
+  "Combat Reflexes": {},
+  "Deceitful": {},
+  "Deft Hands": {},
+  "Diligent": {},
+  "Endurance": {},
+  "Eschew Materials": {},
+  "Great Fortitude": {},
+  "Improved Counterspell": {},
+  "Improved Initiative": {},
+  "Improved Unarmed Strike": {},
+  "Investigator": {},
+  "Iron Will": {},
+  "Lightning Reflexes": {},
+  "Magical Aptitude": {},
+  "Negotiator": {},
+  "Nimble Fingers": {},
+  "Persuasive": {},
+  "Point Blank Shot": {},
+  "Run": {},
+  "Self-Sufficient": {},
+  "Shield Proficiency": {},
+  "Simple Weapon Proficiency": {},
+  "Spell Penetration": {},
+  "Stealthy": {},
+  "Track": {},
+  "Martial Weapon Proficiency": {},
+  "Armor Proficiency (Light)": {},
+  "Empower Spell": {
+   "metamagic": true
+  },
+  "Enlarge Spell": {
+   "metamagic": true
+  },
+  "Extend Spell": {
+   "metamagic": true
+  },
+  "Heighten Spell": {
+   "metamagic": true
+  },
+  "Maximize Spell": {
+   "metamagic": true
+  },
+  "Quicken Spell": {
+   "metamagic": true
+  },
+  "Silent Spell": {
+   "metamagic": true
+  },
+  "Still Spell": {
+   "metamagic": true
+  },
+  "Widen Spell": {
+   "metamagic": true
+  },
+  "Armor Proficiency (Medium)": {
+   "feats": [
+    "Armor Proficiency (Light)"
+   ]
+  },
+  "Armor Proficiency (Heavy)": {
+   "feats": [
+    "Armor Proficiency (Light)",
+    "Armor Proficiency (Medium)"
+   ]
+  },
+  "Augment Summoning": {
+   "feats": [
+    "Spell Focus=con"
+   ]
+  },
+  "Brew Potion": {
+   "cl": 3,
+   "itemCreation": true
+  },
+  "Scribe Scroll": {
+   "cl": 1,
+   "itemCreation": true
+  },
+  "Craft Wondrous Item": {
+   "cl": 3,
+   "itemCreation": true
+  },
+  "Craft Magic Arms and Armor": {
+   "cl": 5,
+   "itemCreation": true
+  },
+  "Craft Wand": {
+   "cl": 5,
+   "itemCreation": true
+  },
+  "Craft Rod": {
+   "cl": 9,
+   "itemCreation": true
+  },
+  "Craft Staff": {
+   "cl": 12,
+   "itemCreation": true
+  },
+  "Forge Ring": {
+   "cl": 12,
+   "itemCreation": true
+  },
+  "Cleave": {
+   "ab": {
+    "str": 13
+   },
+   "feats": [
+    "Power Attack"
+   ]
+  },
+  "Great Cleave": {
+   "ab": {
+    "str": 13
+   },
+   "feats": [
+    "Cleave",
+    "Power Attack"
+   ],
+   "bab": 4
+  },
+  "Combat Expertise": {
+   "ab": {
+    "int": 13
+   }
+  },
+  "Improved Disarm": {
+   "ab": {
+    "int": 13
+   },
+   "feats": [
+    "Combat Expertise"
+   ]
+  },
+  "Improved Feint": {
+   "ab": {
+    "int": 13
+   },
+   "feats": [
+    "Combat Expertise"
+   ]
+  },
+  "Improved Trip": {
+   "ab": {
+    "int": 13
+   },
+   "feats": [
+    "Combat Expertise"
+   ]
+  },
+  "Whirlwind Attack": {
+   "ab": {
+    "dex": 13,
+    "int": 13
+   },
+   "feats": [
+    "Combat Expertise",
+    "Dodge",
+    "Mobility",
+    "Spring Attack"
+   ],
+   "bab": 4
+  },
+  "Deflect Arrows": {
+   "ab": {
+    "dex": 13
+   },
+   "feats": [
+    "Improved Unarmed Strike"
+   ]
+  },
+  "Snatch Arrows": {
+   "ab": {
+    "dex": 15
+   },
+   "feats": [
+    "Deflect Arrows",
+    "Improved Unarmed Strike"
+   ]
+  },
+  "Improved Grapple": {
+   "ab": {
+    "dex": 13
+   },
+   "feats": [
+    "Improved Unarmed Strike"
+   ]
+  },
+  "Stunning Fist": {
+   "ab": {
+    "dex": 13,
+    "wis": 13
+   },
+   "feats": [
+    "Improved Unarmed Strike"
+   ],
+   "bab": 8
+  },
+  "Diehard": {
+   "feats": [
+    "Endurance"
+   ]
+  },
+  "Dodge": {
+   "ab": {
+    "dex": 13
+   }
+  },
+  "Mobility": {
+   "ab": {
+    "dex": 13
+   },
+   "feats": [
+    "Dodge"
+   ]
+  },
+  "Spring Attack": {
+   "ab": {
+    "dex": 13
+   },
+   "feats": [
+    "Dodge",
+    "Mobility"
+   ],
+   "bab": 4
+  },
+  "Exotic Weapon Proficiency": {
+   "bab": 1,
+   "choice": "exotic",
+   "multi": true
+  },
+  "Weapon Proficiency": {
+   "choice": "weapon",
+   "multi": true
+  },
+  "Extra Turning": {
+   "can": [
+    "turnUndead"
+   ],
+   "multi": true
+  },
+  "Improved Turning": {
+   "can": [
+    "turnUndead"
+   ]
+  },
+  "Far Shot": {
+   "feats": [
+    "Point Blank Shot"
+   ]
+  },
+  "Precise Shot": {
+   "feats": [
+    "Point Blank Shot"
+   ]
+  },
+  "Rapid Shot": {
+   "ab": {
+    "dex": 13
+   },
+   "feats": [
+    "Point Blank Shot"
+   ]
+  },
+  "Manyshot": {
+   "ab": {
+    "dex": 17
+   },
+   "feats": [
+    "Point Blank Shot",
+    "Rapid Shot"
+   ],
+   "bab": 6
+  },
+  "Shot on the Run": {
+   "ab": {
+    "dex": 13
+   },
+   "feats": [
+    "Dodge",
+    "Mobility",
+    "Point Blank Shot"
+   ],
+   "bab": 4
+  },
+  "Improved Precise Shot": {
+   "ab": {
+    "dex": 19
+   },
+   "feats": [
+    "Point Blank Shot",
+    "Precise Shot"
+   ],
+   "bab": 11
+  },
+  "Rapid Reload": {
+   "choice": "crossbow",
+   "multi": true
+  },
+  "Greater Spell Focus": {
+   "feats": [
+    "Spell Focus*"
+   ],
+   "choice": "school",
+   "multi": true
+  },
+  "Spell Focus": {
+   "choice": "school",
+   "multi": true
+  },
+  "Greater Spell Penetration": {
+   "feats": [
+    "Spell Penetration"
+   ]
+  },
+  "Two-Weapon Fighting": {
+   "ab": {
+    "dex": 15
+   }
+  },
+  "Two-Weapon Defense": {
+   "ab": {
+    "dex": 15
+   },
+   "feats": [
+    "Two-Weapon Fighting"
+   ]
+  },
+  "Improved Two-Weapon Fighting": {
+   "ab": {
+    "dex": 17
+   },
+   "feats": [
+    "Two-Weapon Fighting"
+   ],
+   "bab": 6
+  },
+  "Greater Two-Weapon Fighting": {
+   "ab": {
+    "dex": 19
+   },
+   "feats": [
+    "Two-Weapon Fighting",
+    "Improved Two-Weapon Fighting"
+   ],
+   "bab": 11
+  },
+  "Power Attack": {
+   "ab": {
+    "str": 13
+   }
+  },
+  "Improved Bull Rush": {
+   "ab": {
+    "str": 13
+   },
+   "feats": [
+    "Power Attack"
+   ]
+  },
+  "Improved Overrun": {
+   "ab": {
+    "str": 13
+   },
+   "feats": [
+    "Power Attack"
+   ]
+  },
+  "Improved Sunder": {
+   "ab": {
+    "str": 13
+   },
+   "feats": [
+    "Power Attack"
+   ]
+  },
+  "Improved Critical": {
+   "bab": 8,
+   "choice": "weapon",
+   "multi": true
+  },
+  "Improved Familiar": {
+   "special": "Ability to acquire a new familiar; compatible alignment; arcane caster level for the familiar",
+   "can": [
+    "arcane"
+   ]
+  },
+  "Improved Shield Bash": {
+   "feats": [
+    "Shield Proficiency"
+   ]
+  },
+  "Tower Shield Proficiency": {
+   "feats": [
+    "Shield Proficiency"
+   ]
+  },
+  "Leadership": {
+   "char": 6
+  },
+  "Mounted Combat": {
+   "skills": {
+    "rid": 1
+   }
+  },
+  "Mounted Archery": {
+   "skills": {
+    "rid": 1
+   },
+   "feats": [
+    "Mounted Combat"
+   ]
+  },
+  "Ride-By Attack": {
+   "skills": {
+    "rid": 1
+   },
+   "feats": [
+    "Mounted Combat"
+   ]
+  },
+  "Spirited Charge": {
+   "skills": {
+    "rid": 1
+   },
+   "feats": [
+    "Mounted Combat",
+    "Ride-By Attack"
+   ]
+  },
+  "Trample": {
+   "skills": {
+    "rid": 1
+   },
+   "feats": [
+    "Mounted Combat"
+   ]
+  },
+  "Natural Spell": {
+   "ab": {
+    "wis": 13
+   },
+   "can": [
+    "wildShape"
+   ]
+  },
+  "Quick Draw": {
+   "bab": 1
+  },
+  "Skill Focus": {
+   "choice": "skill",
+   "multi": true
+  },
+  "Spell Mastery": {
+   "cls": {
+    "Wizard": 1
+   },
+   "multi": true
+  },
+  "Toughness": {
+   "multi": true
+  },
+  "Weapon Finesse": {
+   "bab": 1
+  },
+  "Weapon Focus": {
+   "bab": 1,
+   "choice": "weapon",
+   "multi": true
+  },
+  "Weapon Specialization": {
+   "feats": [
+    "Weapon Focus*"
+   ],
+   "cls": {
+    "Fighter": 4
+   },
+   "choice": "weapon",
+   "multi": true
+  },
+  "Greater Weapon Focus": {
+   "feats": [
+    "Weapon Focus*"
+   ],
+   "cls": {
+    "Fighter": 8
+   },
+   "choice": "weapon",
+   "multi": true
+  },
+  "Greater Weapon Specialization": {
+   "feats": [
+    "Greater Weapon Focus*",
+    "Weapon Focus*",
+    "Weapon Specialization*"
+   ],
+   "cls": {
+    "Fighter": 12
+   },
+   "choice": "weapon",
+   "multi": true
+  },
+  "Ability Focus": {
+   "special": "A special attack",
+   "monster": true,
+   "multi": true
+  },
+  "Awesome Blow": {
+   "ab": {
+    "str": 25
+   },
+   "feats": [
+    "Power Attack",
+    "Improved Bull Rush"
+   ],
+   "special": "Size Large or larger",
+   "monster": true
+  },
+  "Craft Construct": {
+   "feats": [
+    "Craft Magic Arms and Armor",
+    "Craft Wondrous Item"
+   ],
+   "itemCreation": true
+  },
+  "Empower Spell-Like Ability": {
+   "special": "Spell-like ability at caster level 6th or higher",
+   "monster": true
+  },
+  "Quicken Spell-Like Ability": {
+   "special": "Spell-like ability at caster level 10th or higher",
+   "monster": true
+  },
+  "Flyby Attack": {
+   "special": "Fly speed",
+   "monster": true
+  },
+  "Hover": {
+   "special": "Fly speed",
+   "monster": true
+  },
+  "Wingover": {
+   "special": "Fly speed",
+   "monster": true
+  },
+  "Improved Natural Armor": {
+   "ab": {
+    "con": 13
+   },
+   "special": "Natural armor",
+   "monster": true,
+   "multi": true
+  },
+  "Improved Natural Attack": {
+   "bab": 4,
+   "special": "Natural weapon",
+   "monster": true,
+   "multi": true
+  },
+  "Multiattack": {
+   "special": "Three or more natural attacks",
+   "monster": true
+  },
+  "Multiweapon Fighting": {
+   "ab": {
+    "dex": 13
+   },
+   "special": "Three or more hands",
+   "monster": true
+  },
+  "Snatch": {
+   "special": "Size Huge or larger",
+   "monster": true
+  }
+ }
+}

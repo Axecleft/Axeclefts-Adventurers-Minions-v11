@@ -1,0 +1,2845 @@
+{
+ "_note": "Standard gear: the DMG's NPC gear by class and level (Tables 4-12 to 4-22), without the gold. 'melee' and 'ranged' are the class's weapons; 'like' uses another class's table. npcGearValue (DMG Table 4-23) and pcWealth (character wealth by level) are the gp a character of each level has: what the standard gear doesn't use is rolled as treasure.",
+ "npcGearValue": [
+  900,
+  2000,
+  2500,
+  3300,
+  4300,
+  5600,
+  7200,
+  9400,
+  12000,
+  16000,
+  21000,
+  27000,
+  35000,
+  45000,
+  59000,
+  77000,
+  100000,
+  130000,
+  170000,
+  220000
+ ],
+ "pcWealth": [
+  900,
+  900,
+  2700,
+  5400,
+  9000,
+  13000,
+  19000,
+  27000,
+  36000,
+  49000,
+  66000,
+  88000,
+  110000,
+  150000,
+  200000,
+  260000,
+  340000,
+  440000,
+  580000,
+  760000
+ ],
+ "classes": {
+  "Barbarian": {
+   "melee": "Greataxe",
+   "ranged": "Composite Longbow",
+   "levels": [
+    [
+     "mwk scale mail",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "mwk breastplate",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "mwk breastplate",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "mwk breastplate",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 breastplate",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 breastplate",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 breastplate",
+     "+1 melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 breastplate",
+     "amulet +1",
+     "+1 melee",
+     "mundane ranged"
+    ],
+    [
+     "+2 breastplate",
+     "amulet +1",
+     "+1 melee",
+     "mundane ranged"
+    ],
+    [
+     "+2 breastplate",
+     "amulet +1",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+3 breastplate",
+     "amulet +1",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+3 breastplate",
+     "amulet +2",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+3 breastplate",
+     "amulet +2",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+3 breastplate",
+     "amulet +2",
+     "ring +2",
+     "+2 melee",
+     "+1 ranged"
+    ],
+    [
+     "+3 breastplate",
+     "amulet +2",
+     "ring +2",
+     "+3 melee",
+     "+1 ranged"
+    ],
+    [
+     "+3 breastplate",
+     "amulet +2",
+     "ring +2",
+     "+4 melee",
+     "+2 ranged"
+    ],
+    [
+     "+4 breastplate",
+     "amulet +3",
+     "ring +2",
+     "+4 melee",
+     "+2 ranged",
+     "gauntlets +2"
+    ],
+    [
+     "+5 breastplate",
+     "amulet +3",
+     "ring +3",
+     "+4 melee",
+     "+3 ranged",
+     "gauntlets +2"
+    ],
+    [
+     "+5 breastplate",
+     "amulet +3",
+     "ring +3",
+     "+4 melee",
+     "+3 ranged",
+     "belt +6",
+     "gloves +2"
+    ],
+    [
+     "+5 breastplate",
+     "amulet +3",
+     "ring +3",
+     "+4 melee",
+     "+3 ranged",
+     "belt +6",
+     "gloves +2"
+    ]
+   ]
+  },
+  "Bard": {
+   "melee": "Longsword",
+   "ranged": "Light Crossbow",
+   "cloak": "Charisma",
+   "levels": [
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "amulet +1",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "amulet +1",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "amulet +1",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "amulet +1",
+     "mwk melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "mwk studded leather",
+     "amulet +1",
+     "mwk melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +2",
+     "mwk melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "mwk melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +3",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +3",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +4",
+     "ring +3",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +3",
+     "bracers +5",
+     "ring +3",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +4"
+    ],
+    [
+     "amulet +4",
+     "bracers +5",
+     "ring +3",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +6"
+    ],
+    [
+     "amulet +4",
+     "bracers +5",
+     "ring +3",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +6"
+    ],
+    [
+     "amulet +4",
+     "bracers +5",
+     "ring +3",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +6"
+    ]
+   ]
+  },
+  "Cleric": {
+   "melee": "Morningstar",
+   "ranged": "Light Crossbow",
+   "levels": [
+    [
+     "splint mail",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "half-plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "mwk melee",
+     "mundane ranged",
+     "periapt +2"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "mwk melee",
+     "mundane ranged",
+     "periapt +2"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "periapt +2"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +4"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +4"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +4"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +6"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +6"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +6"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mundane ranged",
+     "gloves +2",
+     "periapt +6"
+    ]
+   ]
+  },
+  "Druid": {
+   "melee": "Scimitar",
+   "ranged": "Sling",
+   "levels": [
+    [
+     "hide armor",
+     "heavy wooden shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "hide armor",
+     "heavy wooden shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "hide armor",
+     "heavy wooden shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "hide armor",
+     "heavy wooden shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "hide armor",
+     "heavy wooden shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 hide armor",
+     "heavy wooden shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 hide armor",
+     "heavy wooden shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 hide armor",
+     "+1 heavy wooden shield",
+     "ring +1",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 hide armor",
+     "+1 heavy wooden shield",
+     "ring +1",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 hide armor",
+     "+1 heavy wooden shield",
+     "amulet +1",
+     "ring +1",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 hide armor",
+     "+1 heavy wooden shield",
+     "amulet +1",
+     "ring +1",
+     "mwk melee",
+     "mwk ranged",
+     "periapt +2"
+    ],
+    [
+     "+1 hide armor",
+     "+1 heavy wooden shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged",
+     "periapt +2"
+    ],
+    [
+     "+2 hide armor",
+     "+1 heavy wooden shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged",
+     "periapt +2"
+    ],
+    [
+     "+2 hide armor",
+     "+1 heavy wooden shield",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged",
+     "periapt +4"
+    ],
+    [
+     "+2 hide armor",
+     "+1 heavy wooden shield",
+     "amulet +2",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged",
+     "periapt +4"
+    ],
+    [
+     "+2 hide armor",
+     "+1 heavy wooden shield",
+     "amulet +2",
+     "ring +2",
+     "+2 melee",
+     "mwk ranged",
+     "periapt +4"
+    ],
+    [
+     "+2 hide armor",
+     "+2 heavy wooden shield",
+     "amulet +2",
+     "ring +2",
+     "+2 melee",
+     "mwk ranged",
+     "periapt +6"
+    ],
+    [
+     "+3 hide armor",
+     "+4 heavy wooden shield",
+     "amulet +2",
+     "ring +2",
+     "+2 melee",
+     "mwk ranged",
+     "periapt +6"
+    ],
+    [
+     "+3 hide armor",
+     "+4 heavy wooden shield",
+     "amulet +2",
+     "ring +2",
+     "+2 melee",
+     "mwk ranged",
+     "periapt +6"
+    ],
+    [
+     "+3 hide armor",
+     "+4 heavy wooden shield",
+     "amulet +2",
+     "ring +2",
+     "+2 melee",
+     "mwk ranged",
+     "periapt +6"
+    ]
+   ]
+  },
+  "Fighter": {
+   "melee": "Bastard Sword",
+   "ranged": "Composite Longbow",
+   "levels": [
+    [
+     "splint mail",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "half-plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "heavy steel shield",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+2 full plate",
+     "+1 heavy steel shield",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+2 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+2 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged"
+    ],
+    [
+     "+2 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged"
+    ],
+    [
+     "+2 full plate",
+     "+1 heavy steel shield",
+     "amulet +2",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "amulet +2",
+     "ring +1",
+     "+3 melee",
+     "+1 ranged"
+    ],
+    [
+     "+2 full plate",
+     "+3 heavy steel shield",
+     "amulet +2",
+     "ring +2",
+     "+3 melee",
+     "+2 ranged"
+    ],
+    [
+     "+3 full plate",
+     "+3 heavy steel shield",
+     "amulet +2",
+     "ring +2",
+     "+3 melee",
+     "+2 ranged"
+    ],
+    [
+     "+4 full plate",
+     "+3 heavy steel shield",
+     "amulet +2",
+     "ring +2",
+     "+4 melee",
+     "+2 ranged"
+    ],
+    [
+     "+4 full plate",
+     "+3 heavy steel shield",
+     "amulet +2",
+     "ring +2",
+     "+4 melee",
+     "+2 ranged",
+     "belt +6",
+     "pink ioun stone"
+    ],
+    [
+     "+4 full plate",
+     "+3 heavy steel shield",
+     "amulet +2",
+     "ring +4",
+     "+4 melee",
+     "+2 ranged",
+     "belt +6",
+     "pink ioun stone"
+    ]
+   ]
+  },
+  "Monk": {
+   "melee": "Kama",
+   "ranged": "Sling",
+   "levels": [
+    [
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +1",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +1",
+     "ring +1",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +1",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "+2 melee",
+     "+2 ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "+2 melee",
+     "+2 ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "+3 melee",
+     "+2 ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +1",
+     "+3 melee",
+     "+2 ranged",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +1",
+     "+3 melee",
+     "+2 ranged",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +2",
+     "+4 melee",
+     "+2 ranged",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +2",
+     "+5 melee",
+     "+2 ranged",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +2",
+     "+5 melee",
+     "+2 ranged",
+     "gloves +4",
+     "periapt +4",
+     "pale blue ioun stone",
+     "pink ioun stone"
+    ],
+    [
+     "amulet +2",
+     "bracers +4",
+     "ring +2",
+     "+5 melee",
+     "+2 ranged",
+     "gloves +4",
+     "periapt +4",
+     "pale blue ioun stone",
+     "pink ioun stone"
+    ]
+   ]
+  },
+  "Paladin": {
+   "melee": "Longsword",
+   "ranged": "Composite Longbow",
+   "cloak": "Charisma",
+   "levels": [
+    [
+     "splint mail",
+     "heavy steel shield",
+     "mwk melee",
+     "mundane ranged"
+    ],
+    [
+     "half-plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk half-plate",
+     "heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "full plate",
+     "mwk heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "full plate",
+     "mwk heavy steel shield",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "full plate",
+     "mwk heavy steel shield",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "mwk heavy steel shield",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "+2 melee",
+     "mwk ranged"
+    ],
+    [
+     "+2 full plate",
+     "+1 heavy steel shield",
+     "ring +1",
+     "+2 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged",
+     "cloak +2"
+    ],
+    [
+     "+2 full plate",
+     "+2 heavy steel shield",
+     "ring +1",
+     "+3 melee",
+     "+1 ranged",
+     "cloak +2"
+    ],
+    [
+     "+3 full plate",
+     "+3 heavy steel shield",
+     "ring +1",
+     "+3 melee",
+     "+1 ranged",
+     "cloak +2"
+    ],
+    [
+     "+3 full plate",
+     "+3 heavy steel shield",
+     "amulet +1",
+     "ring +2",
+     "+3 melee",
+     "+1 ranged",
+     "cloak +2"
+    ],
+    [
+     "+4 full plate",
+     "+3 heavy steel shield",
+     "amulet +1",
+     "ring +2",
+     "+4 melee",
+     "+1 ranged",
+     "cloak +2"
+    ],
+    [
+     "+4 full plate",
+     "+4 heavy steel shield",
+     "amulet +1",
+     "ring +2",
+     "+5 melee",
+     "+1 ranged",
+     "cloak +2"
+    ],
+    [
+     "+4 full plate",
+     "+4 heavy steel shield",
+     "amulet +1",
+     "ring +2",
+     "+5 melee",
+     "+2 ranged",
+     "cloak +6"
+    ],
+    [
+     "+4 full plate",
+     "+4 heavy steel shield",
+     "amulet +1",
+     "ring +2",
+     "+5 melee",
+     "+2 ranged",
+     "cloak +6"
+    ]
+   ]
+  },
+  "Ranger": {
+   "melee": "Longsword",
+   "ranged": "Composite Longbow",
+   "levels": [
+    [
+     "studded leather",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+2 studded leather",
+     "+1 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+2 studded leather",
+     "+1 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+2 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+1 melee",
+     "+2 ranged",
+     "gloves +2"
+    ],
+    [
+     "+2 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+2 melee",
+     "+2 ranged",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "+3 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+2 melee",
+     "+2 ranged",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "+3 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+2 melee",
+     "+2 ranged",
+     "belt +4",
+     "gloves +2",
+     "periapt +2"
+    ],
+    [
+     "+3 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+2 melee",
+     "+2 ranged",
+     "belt +4",
+     "gloves +4",
+     "periapt +2"
+    ],
+    [
+     "+4 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+3 melee",
+     "+3 ranged",
+     "belt +4",
+     "gloves +4",
+     "periapt +2"
+    ],
+    [
+     "+4 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+3 melee",
+     "+3 ranged",
+     "belt +4",
+     "gloves +4",
+     "periapt +2"
+    ],
+    [
+     "+4 studded leather",
+     "amulet +1",
+     "ring +1",
+     "+4 melee",
+     "+4 ranged",
+     "belt +4",
+     "gloves +6",
+     "periapt +2"
+    ]
+   ]
+  },
+  "Rogue": {
+   "melee": "Rapier",
+   "ranged": "Shortbow",
+   "levels": [
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk buckler",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk buckler",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk buckler",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "mwk studded leather",
+     "mwk buckler",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 buckler",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 buckler",
+     "mwk melee",
+     "mwk ranged"
+    ],
+    [
+     "+1 studded leather",
+     "+1 buckler",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+1 buckler",
+     "bracers +2",
+     "ring +1",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+1 buckler",
+     "bracers +2",
+     "ring +1",
+     "+1 melee",
+     "+1 ranged"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "+1 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "+2 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +4",
+     "ring +2",
+     "+2 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +4",
+     "ring +2",
+     "+2 melee",
+     "+1 ranged",
+     "gloves +2"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +5",
+     "ring +2",
+     "+2 melee",
+     "+2 ranged",
+     "gloves +4"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +5",
+     "ring +2",
+     "+2 melee",
+     "+2 ranged",
+     "gloves +4"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +5",
+     "ring +2",
+     "+3 melee",
+     "+2 ranged",
+     "gloves +6"
+    ],
+    [
+     "+1 buckler",
+     "amulet +1",
+     "bracers +5",
+     "ring +2",
+     "+3 melee",
+     "+3 ranged",
+     "gloves +6"
+    ]
+   ]
+  },
+  "Sorcerer": {
+   "melee": "Shortspear",
+   "ranged": "Light Crossbow",
+   "cloak": "Charisma",
+   "levels": [
+    [
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +2",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +2",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +2",
+     "ring +2",
+     "mundane melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +2"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +4"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +4"
+    ],
+    [
+     "amulet +2",
+     "bracers +4",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +4"
+    ],
+    [
+     "amulet +2",
+     "bracers +5",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +6"
+    ],
+    [
+     "amulet +2",
+     "bracers +5",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +6"
+    ],
+    [
+     "amulet +2",
+     "bracers +5",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "cloak +6"
+    ]
+   ]
+  },
+  "Wizard": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "levels": [
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +1",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +2",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "bracers +2",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +2",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +1",
+     "mundane melee",
+     "mwk ranged",
+     "headband +2"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "headband +2"
+    ],
+    [
+     "amulet +1",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "gloves +2",
+     "headband +2"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "gloves +2",
+     "headband +4"
+    ],
+    [
+     "amulet +2",
+     "bracers +3",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "gloves +2",
+     "headband +4"
+    ],
+    [
+     "amulet +2",
+     "bracers +5",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "gloves +2",
+     "headband +6"
+    ],
+    [
+     "amulet +2",
+     "bracers +6",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "gloves +2",
+     "headband +6"
+    ],
+    [
+     "amulet +2",
+     "bracers +6",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "gloves +2",
+     "headband +6"
+    ],
+    [
+     "amulet +2",
+     "bracers +6",
+     "ring +2",
+     "+1 melee",
+     "mwk ranged",
+     "gloves +2",
+     "headband +6"
+    ]
+   ]
+  },
+  "Warrior (NPC)": {
+   "melee": "Longsword",
+   "ranged": "Light Crossbow",
+   "like": "Fighter"
+  },
+  "Expert (NPC)": {
+   "melee": "Shortsword",
+   "ranged": "Light Crossbow",
+   "like": "Rogue"
+  },
+  "Aristocrat (NPC)": {
+   "melee": "Rapier",
+   "ranged": "Light Crossbow",
+   "like": "Bard"
+  },
+  "Adept (NPC)": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "like": "Wizard"
+  },
+  "Commoner (NPC)": {
+   "melee": "Club",
+   "ranged": "Sling",
+   "levels": [
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ],
+    [
+     "mundane melee",
+     "mundane ranged"
+    ]
+   ]
+  },
+  "Psychic Warrior": {
+   "melee": "Longsword",
+   "ranged": "Composite Longbow",
+   "like": "Ranger"
+  },
+  "Soulknife": {
+   "melee": "Shortsword",
+   "ranged": "Light Crossbow",
+   "like": "Monk"
+  },
+  "Wilder": {
+   "melee": "Shortspear",
+   "ranged": "Light Crossbow",
+   "like": "Sorcerer"
+  },
+  "Psion (Egoist)": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "like": "Wizard"
+  },
+  "Psion (Kineticist)": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "like": "Wizard"
+  },
+  "Psion (Nomad)": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "like": "Wizard"
+  },
+  "Psion (Seer)": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "like": "Wizard"
+  },
+  "Psion (Shaper)": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "like": "Wizard"
+  },
+  "Psion (Telepath)": {
+   "melee": "Quarterstaff",
+   "ranged": "Light Crossbow",
+   "like": "Wizard"
+  }
+ },
+ "proficiency": {
+  "_note": "SRD weapon, armor and shield proficiencies, for keeping only treasure arms a character can use. Keys are the class's (or race's) English name; a class not listed adds none (most prestige classes). weapons: 'simple', 'martial', 'exotic' or weapon names; armor: 'light', 'medium', 'heavy' or armor names; shields: 'light' (bucklers too), 'heavy', 'tower' or shield names. noMetal: no metal armor or shields (druid). Races: weapons they are proficient with; familiar: exotic weapons they treat as martial. Feats add to these (Simple, Martial and Exotic Weapon Proficiency, Armor Proficiency, Shield and Tower Shield Proficiency).",
+  "classes": {
+   "Barbarian": {
+    "weapons": [
+     "simple",
+     "martial"
+    ],
+    "armor": [
+     "light",
+     "medium"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Bard": {
+    "weapons": [
+     "simple",
+     "Longsword",
+     "Rapier",
+     "Sap",
+     "Short Sword",
+     "Shortbow",
+     "Composite Shortbow",
+     "Whip"
+    ],
+    "armor": [
+     "light"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Cleric": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [
+     "light",
+     "medium",
+     "heavy"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Druid": {
+    "weapons": [
+     "Club",
+     "Dagger",
+     "Dart",
+     "Quarterstaff",
+     "Scimitar",
+     "Sickle",
+     "Shortspear",
+     "Sling",
+     "Spear"
+    ],
+    "armor": [
+     "Padded Armor",
+     "Leather Armor",
+     "Hide Armor"
+    ],
+    "shields": [
+     "Light Wooden Shield",
+     "Heavy Wooden Shield"
+    ],
+    "noMetal": true
+   },
+   "Fighter": {
+    "weapons": [
+     "simple",
+     "martial"
+    ],
+    "armor": [
+     "light",
+     "medium",
+     "heavy"
+    ],
+    "shields": [
+     "light",
+     "heavy",
+     "tower"
+    ]
+   },
+   "Monk": {
+    "weapons": [
+     "Club",
+     "Light Crossbow",
+     "Heavy Crossbow",
+     "Dagger",
+     "Handaxe",
+     "Javelin",
+     "Kama",
+     "Nunchaku",
+     "Quarterstaff",
+     "Sai",
+     "Shuriken",
+     "Siangham",
+     "Sling"
+    ],
+    "armor": [],
+    "shields": []
+   },
+   "Paladin": {
+    "weapons": [
+     "simple",
+     "martial"
+    ],
+    "armor": [
+     "light",
+     "medium",
+     "heavy"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Ranger": {
+    "weapons": [
+     "simple",
+     "martial"
+    ],
+    "armor": [
+     "light"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Rogue": {
+    "weapons": [
+     "simple",
+     "Hand Crossbow",
+     "Rapier",
+     "Sap",
+     "Shortbow",
+     "Composite Shortbow",
+     "Short Sword"
+    ],
+    "armor": [
+     "light"
+    ],
+    "shields": []
+   },
+   "Sorcerer": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [],
+    "shields": []
+   },
+   "Wizard": {
+    "weapons": [
+     "Club",
+     "Dagger",
+     "Heavy Crossbow",
+     "Light Crossbow",
+     "Quarterstaff"
+    ],
+    "armor": [],
+    "shields": []
+   },
+   "Adept (NPC)": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [],
+    "shields": []
+   },
+   "Aristocrat (NPC)": {
+    "weapons": [
+     "simple",
+     "martial"
+    ],
+    "armor": [
+     "light",
+     "medium",
+     "heavy"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Commoner (NPC)": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [],
+    "shields": []
+   },
+   "Expert (NPC)": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [
+     "light"
+    ],
+    "shields": []
+   },
+   "Warrior (NPC)": {
+    "weapons": [
+     "simple",
+     "martial"
+    ],
+    "armor": [
+     "light",
+     "medium",
+     "heavy"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Psion": {
+    "weapons": [
+     "Club",
+     "Dagger",
+     "Heavy Crossbow",
+     "Light Crossbow",
+     "Quarterstaff",
+     "Shortspear"
+    ],
+    "armor": [],
+    "shields": []
+   },
+   "Psychic Warrior": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [
+     "light",
+     "medium"
+    ],
+    "shields": [
+     "light",
+     "heavy"
+    ]
+   },
+   "Soulknife": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [
+     "light"
+    ],
+    "shields": []
+   },
+   "Wilder": {
+    "weapons": [
+     "simple"
+    ],
+    "armor": [
+     "light"
+    ],
+    "shields": []
+   }
+  },
+  "races": {
+   "Elf": {
+    "weapons": [
+     "Longsword",
+     "Rapier",
+     "Longbow",
+     "Composite Longbow",
+     "Shortbow",
+     "Composite Shortbow"
+    ]
+   },
+   "Elf, Drow": {
+    "weapons": [
+     "Hand Crossbow",
+     "Rapier",
+     "Short Sword"
+    ]
+   },
+   "Dwarf": {
+    "familiar": [
+     "Dwarven Waraxe",
+     "Dwarven Urgrosh"
+    ]
+   },
+   "Duergar": {
+    "familiar": [
+     "Dwarven Waraxe",
+     "Dwarven Urgrosh"
+    ]
+   },
+   "Gnome": {
+    "familiar": [
+     "Gnome Hooked Hammer"
+    ]
+   },
+   "Svirfneblin": {
+    "familiar": [
+     "Gnome Hooked Hammer"
+    ]
+   }
+  }
+ },
+ "_kitNote": "Adventuring kits: the class kits of Pathfinder Roleplaying Game Ultimate Equipment (Open Game Content), made of D35E's own items (the mess kit, cheap holy text and blank journal have no D35E item and are left out). 3.5 additions: a wizard's spellbook (free: a wizard begins play with one), and a spell component pouch for sorcerers and bards. 'classKits' gives each class its kit; 'kitExtras' adds items for a class that isn't the character's main one (a fighter/wizard still gets a spellbook). Items: [D35E item name, quantity, 'free'?].",
+ "kits": {
+  "Barbarian's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Blanket, winter",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ]
+  ],
+  "Bard's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ],
+   [
+    "Mirror, small steel",
+    1
+   ],
+   [
+    "Musical instrument, common",
+    1
+   ],
+   [
+    "Pouch, Spell Component",
+    1
+   ]
+  ],
+  "Cleric's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ],
+   [
+    "Candle",
+    10
+   ],
+   [
+    "Holy symbol, wooden",
+    1
+   ]
+  ],
+  "Druid's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Blanket, winter",
+    1
+   ],
+   [
+    "Feed",
+    5
+   ],
+   [
+    "Holly and mistletoe",
+    1
+   ],
+   [
+    "Pouch, Spell Component",
+    1
+   ]
+  ],
+  "Fighter's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ]
+  ],
+  "Monk's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Blanket, winter",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ]
+  ],
+  "Paladin's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ],
+   [
+    "Holy symbol, wooden",
+    1
+   ]
+  ],
+  "Ranger's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ]
+  ],
+  "Rogue's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Rope, hempen, 50ft.",
+    1
+   ],
+   [
+    "Caltrops",
+    1
+   ],
+   [
+    "Chalk",
+    10
+   ],
+   [
+    "Grappling Hook",
+    1
+   ],
+   [
+    "Mirror, small steel",
+    1
+   ],
+   [
+    "Piton",
+    10
+   ],
+   [
+    "Thieves' tools",
+    1
+   ]
+  ],
+  "Sorcerer's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Pouch, Spell Component",
+    1
+   ]
+  ],
+  "Wizard's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Pot, iron",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Soap",
+    1
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ],
+   [
+    "Ink, 1 oz. vial",
+    1
+   ],
+   [
+    "Inkpen",
+    1
+   ],
+   [
+    "Pouch, Spell Component",
+    1
+   ],
+   [
+    "Spellbook",
+    1,
+    "free"
+   ]
+  ],
+  "Psychic's kit": [
+   [
+    "Backpack, Common",
+    1
+   ],
+   [
+    "Bedroll",
+    1
+   ],
+   [
+    "Pouch, belt",
+    1
+   ],
+   [
+    "Flint and steel",
+    1
+   ],
+   [
+    "Rations, Trail",
+    5
+   ],
+   [
+    "Torch",
+    10
+   ],
+   [
+    "Waterskin",
+    1
+   ]
+  ]
+ },
+ "classKits": {
+  "Barbarian": "Barbarian's kit",
+  "Bard": "Bard's kit",
+  "Cleric": "Cleric's kit",
+  "Druid": "Druid's kit",
+  "Fighter": "Fighter's kit",
+  "Monk": "Monk's kit",
+  "Paladin": "Paladin's kit",
+  "Ranger": "Ranger's kit",
+  "Rogue": "Rogue's kit",
+  "Sorcerer": "Sorcerer's kit",
+  "Wizard": "Wizard's kit",
+  "Warrior (NPC)": "Fighter's kit",
+  "Adept (NPC)": "Cleric's kit",
+  "Psychic Warrior": "Fighter's kit",
+  "Soulknife": "Monk's kit",
+  "Wilder": "Psychic's kit",
+  "Psion (Egoist)": "Psychic's kit",
+  "Psion (Kineticist)": "Psychic's kit",
+  "Psion (Nomad)": "Psychic's kit",
+  "Psion (Seer)": "Psychic's kit",
+  "Psion (Shaper)": "Psychic's kit",
+  "Psion (Telepath)": "Psychic's kit"
+ },
+ "kitExtras": {
+  "Bard": [
+   [
+    "Musical instrument, common",
+    1
+   ],
+   [
+    "Pouch, Spell Component",
+    1
+   ]
+  ],
+  "Cleric": [
+   [
+    "Holy symbol, wooden",
+    1
+   ]
+  ],
+  "Druid": [
+   [
+    "Holly and mistletoe",
+    1
+   ],
+   [
+    "Pouch, Spell Component",
+    1
+   ]
+  ],
+  "Paladin": [
+   [
+    "Holy symbol, wooden",
+    1
+   ]
+  ],
+  "Ranger": [
+   [
+    "Holly and mistletoe",
+    1
+   ]
+  ],
+  "Rogue": [
+   [
+    "Thieves' tools",
+    1
+   ]
+  ],
+  "Sorcerer": [
+   [
+    "Pouch, Spell Component",
+    1
+   ]
+  ],
+  "Wizard": [
+   [
+    "Pouch, Spell Component",
+    1
+   ],
+   [
+    "Spellbook",
+    1,
+    "free"
+   ]
+  ],
+  "Adept (NPC)": [
+   [
+    "Holy symbol, wooden",
+    1
+   ]
+  ]
+ },
+ "_startingGoldNote": "SRD starting gold of a 1st-level character by class: [dice of d4, multiplier]. A 1st-level PC has this (average, or rolled on Equipment) instead of the wealth table; NPCs keep the NPC gear value. Psionic classes: the SRD's psionic classes. A class not listed: 4d4 x 10.",
+ "startingGold": {
+  "Barbarian": [
+   4,
+   10
+  ],
+  "Bard": [
+   4,
+   10
+  ],
+  "Cleric": [
+   5,
+   10
+  ],
+  "Druid": [
+   2,
+   10
+  ],
+  "Fighter": [
+   6,
+   10
+  ],
+  "Monk": [
+   5,
+   1
+  ],
+  "Paladin": [
+   6,
+   10
+  ],
+  "Ranger": [
+   6,
+   10
+  ],
+  "Rogue": [
+   5,
+   10
+  ],
+  "Sorcerer": [
+   3,
+   10
+  ],
+  "Wizard": [
+   3,
+   10
+  ],
+  "Psion": [
+   3,
+   10
+  ],
+  "Psychic Warrior": [
+   5,
+   10
+  ],
+  "Soulknife": [
+   5,
+   10
+  ],
+  "Wilder": [
+   4,
+   10
+  ]
+ }
+}

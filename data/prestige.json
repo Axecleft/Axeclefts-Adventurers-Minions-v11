@@ -1,0 +1,29 @@
+{
+ "_note": "SRD prestige class requirements (3.5 SRD and the psionic SRD), by the class's English name. They are met before the first level of the class is taken. Fields: race [names]; align (any evil | any good | any lawful | any chaotic | any nonlawful | any nonchaotic | any nongood | any nonevil, or a list of D35E codes); bab; skills {D35E skill key: ranks}; subSkills [{ parent, name, min }] (Perform (dance)); skillsAny { keys, count, min } (any two Knowledge skills); feats [names; 'Name=choice' needs that choice]; anyFeats [one of]; featsFrom { list | metamagic | itemCreation, count } (several of); featCount { feat, count } (one feat with different choices); spells { arcane, divine, any } (able to cast spells of that level), spontaneousArcane, knowsSpells [names], spellSchools { level, count } (spells of that level or higher from that many schools), schoolSpells { school, count, highLevel } (that many spells of a school, one of highLevel or higher); psionics { manifest (power level), ml (manifester level), pp (a power point reserve) }, knowsPowers [names]; sneak (dice); can [classFeature: stillMind]; martial (proficient with all martial weapons); languages [names]; special (not checked: shown as a reminder). A GM's own requirements (Prestige requirements, start page) are kept in the world and replace these.",
+ "classes": {
+  "Arcane Archer": { "race": ["Elf", "Half-Elf"], "bab": 6, "feats": ["Point Blank Shot", "Precise Shot"], "anyFeats": ["Weapon Focus=longbow", "Weapon Focus=shortbow"], "spells": { "arcane": 1 } },
+  "Arcane Trickster": { "align": "any nonlawful", "skills": { "dsc": 7, "dev": 7, "esc": 7, "kar": 4 }, "spells": { "arcane": 3 }, "knowsSpells": ["Mage Hand"], "sneak": 2 },
+  "Archmage": { "skills": { "kar": 15, "spl": 15 }, "feats": ["Skill Focus=spl"], "featCount": { "feat": "Spell Focus", "count": 2 }, "spells": { "arcane": 7 }, "spellSchools": { "level": 5, "count": 5 } },
+  "Assassin": { "align": "any evil", "skills": { "dis": 4, "hid": 8, "mos": 8 }, "special": "The character must kill someone for no other reason than to join the assassins." },
+  "Blackguard": { "align": "any evil", "bab": 6, "skills": { "hid": 5, "kre": 2 }, "feats": ["Cleave", "Improved Sunder", "Power Attack"], "special": "The character must have made peaceful contact with an evil outsider who was summoned by him or someone else." },
+  "Dragon Disciple": { "skills": { "kar": 8 }, "languages": ["Draconic"], "spontaneousArcane": true, "special": "Any nondragon race (cannot already be a half-dragon). The player chooses a dragon variety when taking the first level." },
+  "Duelist": { "bab": 6, "skills": { "prf": 3, "tmb": 5 }, "feats": ["Dodge", "Mobility", "Weapon Finesse"] },
+  "Dwarven Defender": { "race": ["Dwarf"], "align": "any lawful", "bab": 7, "feats": ["Dodge", "Endurance", "Toughness"] },
+  "Eldritch Knight": { "martial": true, "spells": { "arcane": 3 } },
+  "Hierophant": { "skills": { "kre": 15 }, "featsFrom": { "metamagic": true, "count": 1 }, "spells": { "divine": 7 } },
+  "Horizon Walker": { "skills": { "kge": 8 }, "feats": ["Endurance"] },
+  "Loremaster": { "skillsAny": { "keys": ["kar", "kdu", "ken", "kge", "khi", "klo", "kna", "kno", "kpl", "kre", "kps"], "count": 2, "min": 10 }, "featsFrom": { "metamagic": true, "itemCreation": true, "count": 3 }, "anyFeats": ["Skill Focus=kar", "Skill Focus=kdu", "Skill Focus=ken", "Skill Focus=kge", "Skill Focus=khi", "Skill Focus=klo", "Skill Focus=kna", "Skill Focus=kno", "Skill Focus=kpl", "Skill Focus=kre", "Skill Focus=kps"], "schoolSpells": { "school": "div", "count": 7, "highLevel": 3 } },
+  "Mystic Theurge": { "skills": { "kar": 6, "kre": 6 }, "spells": { "arcane": 2, "divine": 2 } },
+  "Shadowdancer": { "skills": { "mos": 8, "hid": 10 }, "subSkills": [{ "parent": "prf", "name": "dance", "min": 5 }], "feats": ["Combat Reflexes", "Dodge", "Mobility"] },
+  "Thaumaturgist": { "feats": ["Spell Focus=con"], "knowsSpells": ["Lesser Planar Ally"] },
+  "Cerebremancer": { "skills": { "kar": 6, "kps": 6 }, "spells": { "arcane": 2 }, "psionics": { "manifest": 2 } },
+  "Elocater": { "bab": 3, "skills": { "coc": 8 }, "feats": ["Mobility", "Spring Attack"], "psionics": { "manifest": 1 } },
+  "Metamind": { "skills": { "kps": 8, "psi": 4 }, "feats": ["Psicrystal Affinity"], "psionics": { "ml": 4 } },
+  "Psion Uncarnate": { "skills": { "kps": 8, "psi": 8 }, "feats": ["Psionic Body"], "psionics": { "manifest": 3 }, "special": "Must have had some instruction by another psion uncarnate." },
+  "Psionic Fist": { "bab": 4, "skills": { "coc": 9 }, "feats": ["Wild Talent"], "can": ["stillMind"] },
+  "Pyrokineticist": { "align": "any chaotic", "skills": { "coc": 8, "kps": 2 }, "subSkills": [{ "parent": "crf", "name": "alchemy", "min": 1 }], "psionics": { "pp": true }, "special": "Must have set fire to a structure of any size just to watch it burn." },
+  "Slayer": { "bab": 4, "skills": { "kdu": 4 }, "feats": ["Track"], "psionics": { "pp": true } },
+  "Thrallherd": { "skills": { "dip": 4, "kps": 8 }, "feats": ["Inquisitor"], "psionics": { "ml": 5 }, "knowsPowers": ["Mindlink"] },
+  "War Mind": { "align": "any nonchaotic", "bab": 3, "skills": { "khi": 2, "kps": 8 }, "psionics": { "pp": true }, "special": "Must have had some instruction by another war mind." }
+ }
+}
